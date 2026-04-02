@@ -1,0 +1,24 @@
+.rpr-video-source-container {
+    display: flex;
+    align-items: center;
+}
+.rpr-video-source-container input.rpr {
+    flex: 0 1 100%;
+}
+.rpr-video-source-container button.rpr {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 30px;
+    margin: 0 0 0 5px;
+    min-height: 30px;
+    padding: 0;
+}
+
+@media screen and (max-width: 782px) {
+    .rpr-video-source-container button.rpr {
+        flex: 0 0 40px;
+        margin: 0 0 0 10px;
+        min-height: 40px;
+    }
+}

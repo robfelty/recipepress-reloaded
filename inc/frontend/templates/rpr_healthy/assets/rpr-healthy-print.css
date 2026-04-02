@@ -1,0 +1,139 @@
+@CHARSET "UTF-8";
+
+body {
+    color: #1a1a1a;
+    background: #fff;
+    font: 12pt Georgia, "Times New Roman", Times, serif;
+    line-height: 1.6;
+    padding: 1cm;
+}
+
+h2, h3 {
+    font-weight: bold;
+}
+
+a {
+    color: #1a1a1a !important;
+    text-decoration: none !important;
+}
+
+ul, ol {
+
+}
+
+img {
+    display: none !important;
+}
+
+.rpr.star-ratings .rating {
+    margin: 24px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.rpr.star-ratings .rating li {
+    list-style: none !important;
+}
+
+.rpr.star-ratings .rating svg {
+    width: 12px;
+}
+
+h1.post-title {
+    text-align: center;
+}
+
+.single-post-holder .info-more {
+    display: flex;
+    justify-content: center;
+}
+
+.single-post-holder .info-more li {
+    list-style: none !important;
+    margin: 0 1cm;
+}
+
+.recipe-intro {
+    text-align: left;
+    margin: 32px 0 24px 0;
+    font-size: 1.1em;
+}
+
+/* Add space between containers */
+.rpr-terms-container,
+.rpr-source-container,
+.rpr-nutrition-container,
+.rpr-ingredients-container,
+.rpr-times-container,
+.rpr-instruction-container {
+    margin-bottom: .6cm;
+}
+
+.rpr-ingredients-container li.rpr-ingredient a {
+    text-decoration: none !important;
+}
+
+.rpr-source-container {
+    text-align: right;
+}
+
+.rpr-info-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    grid-column-gap: 3em;
+    grid-row-gap: 2em;
+    margin: 0 0 2em 0;
+}
+
+.rpr-terms-container .rpr-term-list {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 10px;
+}
+
+.rpr-nutrition-container .nutrition-energy,
+.rpr-nutrition-container .nutrition-fat,
+.rpr-nutrition-container .nutrition-protein,
+.rpr-nutrition-container .nutrition-carbs {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 10px;
+}
+
+.rpr-times-container .prep-time,
+.rpr-times-container .cook-time,
+.rpr-times-container .ready-time,
+.rpr-times-container .rpr-servings {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 10px;
+}
+
+.rpr-info-container h3 {
+    margin-top: 0;
+}
+
+.rpr-nutrition-container .heading {
+    margin-bottom: 24px;
+}
+
+.rpr-nutrition-container .heading h3,
+.rpr-nutrition-container .heading p {
+    display: inline;
+}
+
+.rpr-terms-container ul.rpr-terms,
+.rpr-nutrition-container ul.rpr-nutrition,
+.rpr-times-container ul.rpr-times,
+.rpr-servings-container ul.rpr-servings {
+    list-style: none !important;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* Don't print the "Print" button */
+.no-print {
+    display: none;
+}

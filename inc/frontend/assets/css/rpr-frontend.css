@@ -1,0 +1,287 @@
+/**
+ * All of the CSS for your public-facing functionality should be included in this file.
+ *
+ * The file is enqueued from inc/frontend/recipepress-frontend.php.
+ */
+
+ul.rpr-alphabet-navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul.rpr-alphabet-navigation li {
+    flex: 0 1 1.5em;
+}
+
+.rpr-tax-container {
+    margin: 0 0 4em 0;
+    text-align: center;
+}
+
+.rpr-taxlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.rpr-taxlist-item {
+
+}
+
+.rpr-taxlist.thumbnail {
+    flex-direction: row;
+}
+
+.rpr-taxlist.thumbnail > .rpr-taxlist-item {
+    margin: 0 1em 1em 0;
+    flex: 0 1 200px;
+}
+
+.rpr-taxlist-image {
+    overflow: hidden;
+    height: 200px;
+    background-color: #f3ffe4;
+}
+
+.rpr-taxlist.thumbnail > .rpr-taxlist-item .rpr-taxlist-title {
+    line-height: 1.2;
+    text-align: center;
+    margin: 5px 0 0 0;
+    font-size: 14px;
+}
+
+.rpr-tax-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 3fr));
+    grid-template-rows: auto;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    margin: 0 0 2em 0;
+}
+
+.rpr-tax-grid-item {
+
+}
+
+.rpr-tax-grid-image {
+    height: 185px;
+    overflow: hidden;
+    background: #fcfdee;
+}
+
+.rpr-tax-grid-title {
+    text-align: center;
+    line-height: 1.2;
+    font-size: .8em;
+    margin: 5px;
+}
+
+.rpr-tax-container a.rpr-tax-link {
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    background-color: #333;
+    padding: 5px 10px;
+}
+
+.rpr-filter-section {
+    margin: 0 0 2em 0;
+}
+.rpr-filter-section h2 {
+    margin: 0 0 1em 0;
+}
+.rpr-filter-section label {
+    font-weight: normal;
+}
+.rpr-filter-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1em 0 0 0;
+    align-items: center;
+}
+.rpr-filter-submit, .rpr-filter-reset {
+    flex: 0 1 45%;
+}
+.rpr-filter-submit {
+    border: 1px solid;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 6px;
+}
+.rpr-filter-reset {
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid;
+    padding: 5px;
+}
+
+.rpr-filter-dropdown {
+    margin: 0 0 1rem 0;
+}
+
+.rpr-filter-dropdown label {
+    display: block;
+}
+
+.rpr-filter-dropdown select {
+    width: 100%;
+    padding: 5px;
+}
+
+.profile-image {
+    margin: 0 auto 1em;
+    text-align: center;
+}
+.rpr-author-profile-widget p {
+    margin: 0;
+    padding: 0;
+}
+.profile-image img {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.profile-description {
+    margin: 0 0 1em 0;
+    text-align: center;
+}
+
+.profile-description a.more {
+    display: block;
+}
+
+.social-media-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-media-links .icon {
+    position: relative;
+    margin: 0 5px 4px 5px;
+    border-radius: 50%;
+}
+
+.social-media-links .icon svg {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+}
+
+.social-media-links .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.rpr-ingredients-list {
+    list-style: none;
+    margin: 0 0 3em 0;
+    columns: 4;
+}
+
+li.rpr-ingredients-list-item span {
+    opacity: .5;
+    font-size: .8em;
+}
+
+.rpr.recent-rating-container {
+
+}
+
+.rpr.recent-rating-container .review {
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-column-gap: 10px;
+    margin: 0 0 15px 0;
+}
+
+.rpr.recent-rating-container .review .avatar {
+
+}
+
+.rpr.recent-rating-container .review .avatar img {
+    border-radius: 50%;
+}
+
+.rpr.recent-rating-container .review .content h3 {
+    margin: 0 0 5px 0;
+}
+
+.rpr.recent-rating-container .review .content p {
+    margin: 0;
+}
+
+.rpr-youtube-player {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 0 0 2rem 0;
+}
+
+.rpr-youtube-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent;
+}
+
+.rpr-youtube-player img {
+    object-fit: cover;
+    display: block;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: 0.4s all;
+    -moz-transition: 0.4s all;
+    transition: 0.4s all;
+}
+
+.rpr-youtube-player img:hover {
+    -webkit-filter: brightness(75%);
+}
+
+.rpr-youtube-player .play {
+    height: 72px;
+    width: 72px;
+    left: 50%;
+    top: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    position: absolute;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' version='1.1' viewBox='0 0 68 48' width='100%25'%3E%3Cpath d='M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z' fill='%23FF0000' fill-opacity='1'%3E%3C/path%3E%3Cpath d='M 45,24 27,14 27,34' fill='%23fff'%3E%3C/path%3E%3C/svg%3E") no-repeat;
+    cursor: pointer;
+}
+
+/*.rpr-stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    line-height: 1;
+}
+.rpr-stars::before {
+    content: "★★★★★";
+    background: linear-gradient(90deg, #f8db00 var(--percent), #f1f1f1 var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}*/
+

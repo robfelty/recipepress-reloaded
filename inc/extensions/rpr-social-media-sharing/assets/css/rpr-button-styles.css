@@ -1,0 +1,345 @@
+.rpr-share-buttons {
+    margin: 1em auto;
+    position: relative;
+}
+
+.rpr-share-buttons .rpr-share-this {
+    padding: 0 5px;
+    position: absolute;
+    top: -13px;
+    background-color: #fff;
+    right: 0;
+    left: 0;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    display: none;
+}
+
+.rpr-share-this p {
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+}
+
+.rpr-share-buttons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.rpr-share-buttons-list div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0 3px 5px 3px;
+    font-size: 13px;
+    line-height: 1;
+    transition: background-color cubic-bezier(0.47, 0, 0.75, 0.72) .6s;
+    border-radius: 2px;
+    flex-basis: auto;
+    height: 32px;
+}
+
+.rpr-share-buttons-list div:last-child {
+
+}
+
+.rpr-share-buttons-list div a {
+    text-decoration: none;
+    box-shadow: none;
+    color: #fff;
+    transition: all 0.3s;
+    width: 100%;
+    display: inline-flex;
+    padding: 8px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.rpr-share-buttons-list svg {
+    fill: #fff;
+    margin: 0 4px 0 0;
+}
+
+.rpr-share.rpr-instapaper-button svg {
+    width: 6px;
+}
+
+.rpr-share.rpr-facebook-button svg,
+.rpr-share.rpr-tumblr-button svg {
+    width: 9px;
+}
+
+.rpr-share.rpr-pinterest-button svg {
+    width: 14px;
+}
+
+.rpr-share.rpr-google-button svg,
+.rpr-share.rpr-twitter-button svg,
+.rpr-share.rpr-mix-button svg,
+.rpr-share.rpr-flipboard-button svg,
+.rpr-share.rpr-print-button svg,
+.rpr-share.rpr-email-button svg,
+.rpr-share.rpr-reddit-button svg,
+.rpr-share.rpr-pocket-button svg,
+.rpr-share.rpr-buffer-button svg {
+    width: 16px;
+}
+
+.rpr-share.rpr-yummly-button svg {
+    width: 20px;
+}
+
+.rpr-share.rpr-digg-button svg {
+    width: 24px;
+}
+
+.rpr-facebook-button {
+    background-color: #3b5998;
+    border: 1px solid #3b5998;
+}
+
+.rpr-facebook-button:hover,
+.rpr-share-buttons-list .rpr-facebook-button a:hover {
+    background-color: #fff !important;
+    color: #3b5998;
+}
+
+.rpr-twitter-button {
+    background-color: #4099ff;
+    border: 1px solid #4099ff;
+}
+
+.rpr-twitter-button:hover,
+.rpr-share-buttons-list .rpr-twitter-button a:hover {
+    background-color: #fff !important;
+    color: #4099ff;
+}
+
+.rpr-google-button {
+    background-color: #c61800;
+    border: 1px solid #c61800;
+}
+
+.rpr-google-button:hover,
+.rpr-share-buttons-list .rpr-google-button a:hover {
+    background-color: #fff !important;
+    color: #c61800;
+}
+
+.rpr-pinterest-button {
+    background-color: #c62e33;
+    border: 1px solid #c62e33;
+}
+
+.rpr-pinterest-button:hover,
+.rpr-share-buttons-list .rpr-pinterest-button a:hover {
+    background-color: #fff !important;
+    color: #c62e33;
+}
+
+.rpr-mix-button {
+    background-color: #fd8235;
+    border: 1px solid #fd8235;
+}
+
+.rpr-mix-button:hover,
+.rpr-share-buttons-list .rpr-mix-button a:hover {
+    background-color: #fff !important;
+    color: #fd8235;
+}
+
+.rpr-tumblr-button {
+    background-color: #34526f;
+    border: 1px solid #34526f;
+}
+
+.rpr-tumblr-button:hover,
+.rpr-share-buttons-list .rpr-tumblr-button a:hover {
+    background-color: #fff !important;
+    color: #34526f;
+}
+
+.rpr-reddit-button {
+    background-color: #ff4500;
+    border: 1px solid #ff4500;
+}
+
+.rpr-reddit-button:hover,
+.rpr-share-buttons-list .rpr-reddit-button a:hover {
+    background-color: #fff !important;
+    color: #ff4500;
+}
+
+.rpr-pocket-button {
+    background-color: #ef4056;
+    border: 1px solid #ef4056;
+}
+
+.rpr-pocket-button:hover,
+.rpr-share-buttons-list .rpr-pocket-button a:hover {
+    background-color: #fff !important;
+    color: #ef4056;
+}
+
+.rpr-digg-button {
+    background-color: #005be2;
+    border: 1px solid #005be2;
+}
+
+.rpr-digg-button:hover,
+.rpr-share-buttons-list .rpr-digg-button a:hover {
+    background-color: #fff !important;
+    color: #005be2;
+}
+
+.rpr-instapaper-button {
+     background-color: #428bca;
+     border: 1px solid #428bca;
+ }
+
+.rpr-instapaper-button:hover,
+.rpr-share-buttons-list .rpr-instapaper-button a:hover {
+    background-color: #fff !important;
+    color: #428bca;
+}
+
+.rpr-buffer-button {
+    background-color: #168eea;
+    border: 1px solid #168eea;
+}
+
+.rpr-buffer-button:hover,
+.rpr-share-buttons-list .rpr-buffer-button a:hover {
+    background-color: #fff !important;
+    color: #168eea;
+}
+
+.rpr-email-button {
+    background-color: #168eea;
+    border: 1px solid #168eea;
+}
+
+.rpr-email-button:hover,
+.rpr-share-buttons-list .rpr-email-button a:hover {
+    background-color: #fff !important;
+    color: #168eea;
+}
+
+.rpr-print-button {
+    background-color: #4CAF50;
+    border: 1px solid #4CAF50;
+}
+
+.rpr-print-button:hover,
+.rpr-share-buttons-list .rpr-print-button a:hover{
+    background-color: #fff !important;
+    color: #4CAF50;
+}
+
+.rpr-yummly-button {
+    background-color: #e16120;
+    border: 1px solid #e16120;
+}
+
+.rpr-yummly-button:hover,
+.rpr-share-buttons-list .rpr-yummly-button a:hover{
+    background-color: #fff !important;
+    color: #e16120;
+}
+
+.rpr-flipboard-button {
+    background-color: #e12828;
+    border: 1px solid #e12828;
+}
+
+.rpr-flipboard-button:hover,
+.rpr-share-buttons-list .rpr-flipboard-button a:hover{
+    background-color: #fff !important;
+    color: #e12828;
+}
+
+.rpr-share-button {
+    background-color: red;
+    border: 1px solid red;
+}
+
+.rpr-share-button:hover,
+.rpr-share-buttons-list .rpr-share-button a:hover{
+    background-color: #fff !important;
+    color: red;
+}
+
+.rpr-share-buttons-list div i {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+
+.rpr-share-buttons-list div a p {
+    margin: 0 0 0 5px;
+    padding: 0;
+    display: inline;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.settings-page {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.rpr-share-button {
+    pointer-events: none;
+    user-select: none;
+}
+
+@media (max-width: 480px) {
+    .rpr-share-buttons .rpr-share-this {
+        display: inline-block;
+    }
+
+    .rpr-share-buttons-list {
+        justify-content: space-between;
+        border: 1px solid rgba(0, 128, 0, 0.5);
+        padding: 13px 5px 5px;
+        border-radius: 3px;
+    }
+
+    .rpr-share-buttons-list div {
+        flex-grow: 0;
+        border-radius: 16px;
+        width: 32px;
+    }
+
+    .rpr-share-buttons-list div a {
+        border-radius: 16px;
+    }
+
+    .rpr-share-buttons-list div a p {
+        display: none;
+    }
+
+    .rpr-share-buttons-list a:hover {
+        border-radius: 16px;
+    }
+
+    .rpr-share-button {
+        width: auto !important;
+    }
+
+    .rpr-share-button p {
+        display: inline-block !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .rpr-share-buttons .rpr-share-this {
+        display: inline-block;
+    }
+    .rpr-share-button {
+        display: none;
+    }
+}

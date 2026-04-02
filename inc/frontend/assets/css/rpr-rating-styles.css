@@ -1,0 +1,79 @@
+.rating {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+ul.rating.form-rating svg {
+    width: 12px;
+    margin: -15px 0 0 0;
+    line-height: 1;
+    transition: fill cubic-bezier(0.45, 0.05, 0.55, 0.95) .25s;
+}
+
+.rating li {
+    display: flex;
+    margin: 0 .5em 0 0 !important;
+    cursor: pointer;
+    list-style: none !important;
+    line-height: 1;
+}
+
+.rating .l {
+
+}
+
+.rating .r {
+
+}
+
+.rpr_description .ratings {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-48%);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+}
+
+.rpr_description .ratings ul {
+    padding: 5px;
+}
+
+#commentform .rating-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#commentform .form-rating{
+    margin: 3px 0 0 0;
+}
+
+.rating-label {
+    margin: 0 10px 1em 0;
+    line-height: 1;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.comment .star-ratings .rating svg {
+    width: 10px;
+}
+
+.woocommerce .rating-container { /* This maybe necessary */
+    display: none !important;
+}
+
+@media (max-width: 320px) {
+
+    #comment-form .rating-container {
+        justify-content: center;
+    }
+
+}

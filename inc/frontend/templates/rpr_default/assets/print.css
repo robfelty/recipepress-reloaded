@@ -1,0 +1,72 @@
+@CHARSET "UTF-8";
+
+body {
+    color: #1a1a1a;
+    background: #fff;
+    font: 12pt Georgia, "Times New Roman", Times, serif;
+    line-height: 1.6;
+    padding: 0 1cm;
+}
+
+h2, h3 {
+    font-weight: bold;
+}
+
+a {
+    color: #1a1a1a !important;
+    text-decoration: none !important;
+}
+
+ul, ol {
+
+}
+
+img {
+    display: none !important;
+}
+
+/* Add space between containers */
+.rpr-terms-container,
+.rpr-source-container,
+.rpr-nutrition-container,
+.rpr-ingredients-container,
+.rpr-times-container,
+.rpr-instruction-container {
+    margin-bottom: .6cm;
+}
+
+.rpr-terms-container ul.rpr-term-list,
+.rpr-times-container ul.rpr-times,
+.rpr-nutrition-container ul.rpr-nutrition {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 2em 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    list-style: none !important;
+}
+
+
+.rpr-source-container {
+    text-align: center;
+}
+
+.rpr-nutritional-data .nutrition-per {
+    margin: 0 1em 0 0;
+}
+
+.rpr-nutritional-data div {
+    margin: 0 10px 0 0;
+}
+
+
+
+.rpr-times-container .rpr-times div {
+    margin: 0 10px 0 0;
+}
+
+/* Don't print the "Print" button */
+.print-link {
+    display: none;
+}

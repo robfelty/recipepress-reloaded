@@ -1,0 +1,60 @@
+.rpr_general_information_metabox .recipe_details_row {
+    margin: 0 0 1em 0;
+}
+
+.rpr_general_information_metabox label {
+    display: block;
+    font-weight: 600;
+    width: 100%;
+}
+.rpr_general_information_metabox .recipe_details_row {
+    position: relative;
+}
+
+.rpr_general_information_metabox .recipe_details_row.rpr_servings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rpr_general_information_metabox .recipe_details_row input#rpr_recipe_servings {
+    width: 25%;
+    min-width: 45px;
+}
+
+.rpr_general_information_metabox .recipe_details_row select#rpr_recipe_servings_type,
+.rpr_general_information_metabox .recipe_details_row input#rpr_recipe_servings_type{
+    width: 72%;
+}
+
+.rpr_general_information_metabox .recipe_details_row #rpr_recipe_servings_note {
+    font-size: 12px;
+    color: #757575;
+    font-style: italic;
+    width: 100%;
+}
+
+.rpr_general_information_metabox .rpr_times {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rpr_general_information_metabox .rpr_times .recipe-general-form-notes {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    color: #757575;
+}
+
+.rpr_general_information_metabox .rpr_times .recipe_details_row {
+    flex: 0 1 32%;
+    margin: 0 5px 0 0;
+}
+
+.rpr_general_information_metabox .rpr_times .recipe_details_row:last-child {
+    margin: 0;
+}
+
+.rpr_general_information_metabox .rpr_times .recipe_details_row input {
+    width: 100%;
+}

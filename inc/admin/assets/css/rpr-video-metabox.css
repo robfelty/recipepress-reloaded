@@ -1,0 +1,43 @@
+.rpr-video-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.rpr-video-input-container input.rpr {
+    flex: 0 1 100%;
+}
+
+.rpr-video-input-container button.rpr {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 30px;
+    margin: 0 0 0 5px;
+    min-height: 30px;
+    padding: 0;
+}
+
+.rpr-video-thumb-container {
+    margin: 10px 0 0 0;
+    width: 100%;
+    word-break: break-word;
+}
+
+.rpr-video-thumb-container p {
+    font-size: 12px;
+    line-height: 1.2;
+    padding: 5px;
+    background-color: #ffe9e9;
+}
+
+.rpr-video-thumb-container img {
+    width: 100%;
+}
+
+@media screen and (max-width: 782px) {
+    .rpr-video-input-container button.rpr {
+        flex: 0 0 40px;
+        margin: 0 0 0 10px;
+        min-height: 40px;
+    }
+}

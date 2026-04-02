@@ -1,0 +1,102 @@
+table#recipe-ingredients {
+    width: 100%;
+    border-spacing: 4px 4px;
+    table-layout: auto;
+    vertical-align: middle;
+}
+
+tr.rpr-ing-row td:hover input {
+    /*border-color: #5bd96dc9;
+    box-shadow: 0 0 2px #5bd96dc9;*/
+}
+
+td.rpr-ing-sort {
+    width: 32px;
+    cursor: grab;
+}
+
+td.rpr-ing-amount {
+    width: 10%;
+}
+
+td.rpr-ing-unit {
+    width: 15%;
+}
+
+td.rpr-ing-name {
+    width: 25%;
+}
+
+td.rpr-ing-note {
+    width: 35%;
+}
+
+td.rpr-ing-link {
+    width: 8%;
+    min-width: 65px;
+}
+
+td.rpr-ing-group {
+    width: 50%;
+}
+
+td.rpr-ing-link button,
+td.rpr-ing-add button,
+td.rpr-ing-del button {
+    width: 28px;
+    padding: 0 7px 1px !important;
+}
+
+td.rpr-ing-add,
+td.rpr-ing-del {
+    width: 31px;
+}
+
+td.rpr-ing-amount input,
+td.rpr-ing-unit input,
+td.rpr-ing-name input,
+td.rpr-ing-note input,
+td.rpr-ing-unit select {
+    width: 100%;
+}
+
+td.rpr-ing-group input {
+    width: 66%;
+}
+
+#rpr-ing-add-row-ing,
+#rpr-ing-add-row-grp,
+#rpr-ing-switch-bulk-import {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+    gap: 5px;
+}
+
+#rpr-ingredients-bulk-import {
+    padding: 1rem;
+    font-size: initial;
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 782px) {
+    tr.rpr-ing-row .button {
+        margin: 0;
+        padding: 5px !important;
+    }
+    #rpr-ing-add-row-ing,
+    #rpr-ing-add-row-grp {
+        min-height: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    td.rpr-ing-link,
+    td.rpr-ing-add,
+    td.rpr-ing-del {
+        display: none;
+    }
+    td.rpr-ing-name {
+        width: 30%;
+    }
+}

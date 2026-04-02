@@ -1,0 +1,310 @@
+.rpr.jump-print-container {
+    margin: 0 0 1em 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rpr.jump-print-container a {
+    margin: 0 10px;
+}
+
+.rpr.recipe-container {
+    position: relative;
+    border: 2px solid;
+    margin: 10rem auto 0 auto;
+}
+
+.rpr.thumbnail-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: 2px solid;
+    background-size: cover;
+    background-position: center;
+}
+
+.rpr.meta-container {
+    padding-top: 120px !important;
+    background-color: rgba(0, 122, 204, 0.1);
+}
+
+.rpr.title-container {
+
+}
+
+.rpr.title-container h2 {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.rpr.rating-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1rem 0;
+}
+
+.rpr.rating-container .star-ratings .rating svg {
+    width: 16px;
+}
+
+.rpr-servings {
+    margin: 0 0 1em 0;
+    list-style: none;
+}
+
+.rpr-servings li {
+    display: inline;
+}
+
+/*.rpr.rating-container .star-ratings .rating .whole svg.left,
+.rpr.rating-container .star-ratings .rating .whole svg.right {
+    fill: red;
+}
+
+.rpr.rating-container .star-ratings .rating .half svg.left {
+    fill: red;
+}
+
+.rpr.rating-container .star-ratings .rating .half svg.right {
+    fill: #b57985;
+}
+
+.rpr.rating-container .star-ratings .rating .empty svg.left,
+.rpr.rating-container .star-ratings .rating .empty svg.right {
+    fill: #b57985;
+}*/
+
+.rpr.terms-container ul.rpr-term-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 .5rem 0;
+    list-style: none !important;
+}
+
+.rpr.terms-container li.rpr-term-item {
+    padding: 0 5px;
+}
+
+.rpr.times-container {
+    margin: 0 0 .5rem 0;
+}
+
+.rpr.times-container ul.rpr-times {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    list-style: none !important;
+}
+
+.rpr.times-container ul.rpr-times li {
+    padding: 0 5px;
+}
+
+.rpr.times-container .rpr-times div {
+    margin: 0 5px 0 5px;
+}
+
+.rpr.servings-source-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0 1rem 0;
+    flex-wrap: wrap;
+}
+
+.rpr.servings-container .rpr-servings {
+}
+
+.rpr.servings-source-container div {
+    margin: 0 5px;
+}
+
+.rpr.meta-container,
+.rpr.excerpt-container,
+.rpr.ingredients-container,
+.rpr.instruction-container,
+.rpr.notes-container,
+.rpr.nutrition-container {
+    margin: 0 0 2rem 0;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.rpr.ingredients-container h2,
+.rpr.instruction-container h2,
+.rpr.notes-container h2 {
+    margin: 0 0 20px 0;
+}
+
+.rpr.ingredients-container h3,
+.rpr.instruction-container h3 {
+    margin: 0 0 10px 0;
+}
+
+/*.rpr.ingredients-container ul.rpr-ingredient-list {
+    list-style: none;
+}
+
+.rpr.ingredients-container ul.rpr-ingredient-list li::before {
+    content: "\2022";
+    color: #0b0b0b;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}*/
+
+.rpr.ingredients-container .rpr-ingredient-list {
+    margin: 0 0 15px 20px;
+}
+
+.rpr.ingredients-container .rpr-ingredient-list:last-child {
+    margin: 0 0 0 20px;
+}
+
+.rpr.instruction-container .rpr-instruction-list {
+    list-style-position: inside;
+    margin-bottom: 15px;
+}
+
+.rpr.instruction-container .rpr-instruction-list .rpr-instruction {
+    position: relative;
+    margin: 0 0 .6rem 2rem;
+    list-style-type: none !important;
+    counter-increment: counter;
+}
+
+.rpr.instruction-container .rpr-instruction-list .rpr-instruction:last-child {
+    margin-bottom: 0;
+}
+
+.rpr.instruction-container .rpr-instruction-list .rpr-instruction:before {
+    content: counter(counter);
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    border-radius: 100%;
+    margin-top: 5px;
+    margin-left: -32px;
+    font-weight: 800;
+    font-size: 11px;
+}
+
+.rpr.nutrition-container {
+    margin: 0 0 .5rem 0;
+}
+
+.rpr.nutrition-container ul.rpr-nutrition {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 0;
+    list-style: none !important;
+}
+
+.rpr.nutrition-container ul.rpr-nutrition li {
+    padding: 0 5px;
+}
+
+.rpr-instruction-wrapper.has_thumbnail.right {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.rpr.ig-share-container {
+    color: #fff;
+    padding: 15px;
+    margin: 2em 0 0 0;
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-column-gap: 15px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.rpr.ig-share-container a {
+    color: #fff;
+}
+
+.rpr.ig-share-container p {
+    margin: 0;
+}
+
+.rpr.ig-share-container h5 {
+    margin-bottom: 5px;
+}
+
+.rpr.ig-share-container .rpr-icon {
+    border: 2px solid;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Small (x-sm) */
+@media (max-width: 320px) {
+    .rpr.terms-container {
+        flex-direction: column;
+    }
+    .rpr.times-container dl {
+        flex-direction: column;
+    }
+    .rpr.instruction-container .rpr-instruction-list {
+        margin-left: 0;
+    }
+    .rpr-instruction-wrapper.has_thumbnail.right {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .rpr.instruction-container .rpr-instruction-list {
+        margin-left: 0;
+    }
+    .rpr-instruction-wrapper.has_thumbnail.right {
+        grid-template-columns: 1fr;
+    }
+    .rpr.ig-share-container {
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+/* Medium (md) */
+@media (max-width: 768px) {
+    .rpr.instruction-container .rpr-instruction-list {
+        margin-left: 0;
+    }
+}
+
+/* Large (lg) */
+@media (max-width: 1024px) {
+    .rpr.instruction-container .rpr-instruction-list {
+        margin-left: 0;
+    }
+}
+
+/* Extra Large (xl) */
+@media (max-width: 1280px) {
+
+}

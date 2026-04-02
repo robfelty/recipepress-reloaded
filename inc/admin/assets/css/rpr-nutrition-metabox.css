@@ -1,0 +1,76 @@
+.rpr_nutrition_metabox .recipe_details_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: end;
+    gap: 0 10px;
+    box-sizing: border-box;
+}
+
+.rpr_nutrition_metabox .recipe_details_row .rpr_nutrition_row {
+    width: 100%;
+}
+
+.rpr_nutrition_metabox .recipe_details_row .rpr_nutrition_row:last-child {
+    margin: 0;
+}
+
+.rpr_nutrition_metabox .recipe_details_row .recipe-general-form-notes {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    color: #757575;
+}
+
+.rpr_nutrition_metabox .recipe_details_row input,
+.rpr_nutrition_metabox .recipe_details_row select {
+    width: 100%;
+    margin: 0;
+}
+
+.rpr_nutrition_metabox .recipe_details_row label {
+    display: block;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 99%;
+}
+
+.recipe_expand_row {
+    display: grid;
+    grid-template-columns: 1fr 36px 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 1rem 0 0 0;
+}
+
+.recipe_expand_row span.hr {
+    border-bottom: 1px solid #c3c4c7;
+    width: 100%;
+}
+
+.recipe_expand_row .rpr-expand-nutrition {
+    color: #787c82;
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.recipe_expand_row .expand-nutrition-indicator::before {
+    content: "\f347";
+    color: inherit;
+    position: relative;
+    top: 0.11rem;
+    width: 20px;
+    height: 20px;
+}
+
+#rpr_nutrition_metabox ::placeholder,
+#rpr_general_information_metabox ::placeholder,
+#rpr_ingredients_metabox ::placeholder {
+    color: #bdbdbd;
+}

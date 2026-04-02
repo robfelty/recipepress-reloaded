@@ -1,0 +1,129 @@
+.rpr-author-box-container {
+    padding: 2em 0 0 0;
+    margin: 2em 0 0 0;
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rpr-author-social-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rpr-author-social-icons svg {
+    width: 14px;
+    fill: #fff;
+}
+
+.rpr-author-social-container .rpr-author-social-icons {
+    flex: 0 1 40%;
+}
+
+.rpr-author-social-container .rpr-author-archive-link {
+    flex: 0 1 60%;
+    text-align: right;
+}
+
+.rpr-author-box-gravatar-container {
+    margin: 0 1em 0 0;
+    width: 60px;
+    flex: 0 1 auto;
+}
+
+.rpr-author-box-gravatar-container img {
+    border-radius: 50%;
+}
+
+.rpr-author-box-bio-container {
+    flex: 0 1 85%;
+}
+
+.rpr-author-box-bio-container h3 {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+}
+
+.rpr-author-box-bio-container p {
+    line-height: 1.6;
+    font-size: 0.9em;
+}
+
+.rpr-author-archive-link {
+    font-size: 0.9em;
+}
+
+.rpr-author-archive-link a {
+    color: #575757;
+    font-size: 0.9em;
+}
+
+.rpr-author-social-icons .facebook svg {
+    width: 8px;
+}
+
+.rpr-author-social-icons .pinterest svg {
+    width: 12px;
+}
+
+.rpr-author-social-icons .yummly svg {
+    width: 16px;
+}
+
+.rpr-author-social-icons {
+
+}
+
+.rpr-author-social-icons a {
+    text-decoration: none;
+    border: none;
+    margin: 0 5px 5px 0;
+    color: #fff;
+    box-shadow: none;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    border-radius: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 320px) {
+    .rpr-author-box-bio-container {
+        flex: 0 1 100%;
+        text-align: center;
+    }
+
+    .rpr-author-social-container .rpr-author-social-icons {
+        flex: 0 1 100%;
+    }
+
+    .rpr-author-social-container .rpr-author-archive-link {
+        flex: 0 1 100%;
+        text-align: inherit;
+    }
+}
+
+@media (max-width: 480px) {
+    .rpr-author-box-bio-container {
+        flex: 0 1 100%;
+    }
+
+    .rpr-author-box-bio-container h3,
+    .rpr-author-box-bio-container p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 568px) {
+    .rpr-author-box-bio-container {
+        flex: 0 1 100%;
+    }
+
+    .rpr-author-box-bio-container h3,
+    .rpr-author-box-bio-container p {
+        text-align: center;
+    }
+}

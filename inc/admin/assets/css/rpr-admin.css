@@ -1,0 +1,271 @@
+/**
+ * All of the CSS for your admin-specific functionality should be included in this file.
+ *
+ * The file is enqueued from inc/admin/class-admin.php.
+ */
+
+tr.rpr_recipe_template > td {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+tr.rpr_recipe_template > td .template-options img.template-label-image.checked {
+    border: 5px solid #8BC34A;
+    box-sizing: border-box;
+}
+
+tr.rpr_recipe_template > td .template-options .label-container p {
+    line-height: 1;
+}
+
+tr.rpr_recipe_template > td .template-options {
+    margin: 0 1em 1em;
+    position: relative;
+}
+
+tr.rpr_recipe_template > td input[type=radio] {
+    display: none;
+}
+
+tr.rpr_recipe_template > td .template-options .label-container {
+    height: 245px;
+    overflow: hidden;
+    position: relative;
+}
+
+tr.rpr_recipe_template img.template-label-image {
+    width: 150px;
+    height: 245px;
+}
+
+tr.rpr_recipe_template .template-label-info {
+    position: absolute;
+    width: 100%;
+    bottom: -30px;
+    height: 30px;
+    transition: cubic-bezier(0.55, 0.06, 0.68, 0.19) 0.2s;
+}
+
+tr.rpr_recipe_template .template-label-p {
+    background: #8BC34A;
+    padding: 5px 10px;
+    color: #fff;
+    margin: 0;
+}
+
+tr.rpr_recipe_template .label-container:hover .template-label-info {
+    transform: translateY(-62px);
+}
+
+
+#general_tab h2.hndle,
+#ingredient_tab h2.hndle,
+#taxonomy_tab h2.hndle,
+#metadata_tab h2.hndle,
+#units_tab h2.hndle,
+#appearance_tab h2.hndle,
+#advanced_tab h2.hndle,
+#components_tab h2.hndle{
+    display: none;
+}
+
+#general_tab th,
+#ingredient_tab th,
+#taxonomy_tab th,
+#metadata_tab th,
+#units_tab th,
+#appearance_tab th,
+#advanced_tab th,
+#components_tab th{
+    padding: 10px;
+}
+
+td hr {
+    display: none;
+}
+
+tr.rpr-table-header th {
+    background: #efefef;
+    border: 1px solid #efefef;
+    text-align: center;
+    font-size: 16px;
+}
+
+tr.rpr-table-header td {
+    border-bottom: 2px solid #efefef;
+}
+
+
+tr.rpr_slug_instructions.rpr-table-instruction p {
+    color: #FF9800;
+    background: #fff8e2;
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+.rpr-settings-label {
+    font-size: 12px;
+    color: #909090;
+    font-style: italic;
+}
+
+.rpr-settings-label:hover {
+    color: #313131;
+}
+
+.has-link {
+    color: green !important;
+}
+
+#slugdiv input#post_name {
+    width: 100%;
+}
+
+.rpr.notice {
+    display: grid;
+    grid-template-columns: auto 115px;
+}
+
+.rpr-update-notice {
+    display: inline-block;
+}
+
+.rpr-update-button {
+    color: white;
+    background-color: #FF9800;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.rpr-update-button:hover {
+    color: #FF9800;
+    background-color: #fff;
+    border: 1px solid;
+}
+
+.rpr-hidden {
+    visibility: hidden !important;
+    display: none !important;
+}
+
+#dashboard_right_now li a.rpr_recipe-count:before,
+#dashboard_right_now span.rpr_recipe-count:before {
+    content: '\f511';
+}
+
+#dashboard_right_now li a.rpr_recipe-ratings:before,
+#dashboard_right_now span.rpr_recipe-ratings:before {
+    content: '\f155';
+}
+
+.rpr.update-message + p {
+    display: none;
+}
+
+.rpr.text-25 {
+    width: 25%;
+}
+
+.rpr.text-50 {
+    width: 50%;
+}
+
+.rpr.text-75 {
+    width: 75%;
+}
+
+.rpr.text-100 {
+    width: 100%;
+}
+
+.rpr.inline-row {
+    display: flex;
+}
+
+.rpr.inline-inputs {
+    flex: 0 1 24%;
+    margin: 0 1em 0 0;
+}
+
+.rpr.inline-inputs input {
+    width: 100%;
+}
+
+table.wp-list-table .row-actions {
+    color: #565656;
+}
+
+form.rpr-settings__form .rpr-table-password td {
+    position: relative;
+}
+
+form.rpr-settings__form .rpr-table-password td .rpr-unmask-input {
+    position: absolute;
+    width: 28px;
+    display: inline-flex;
+    cursor: pointer;
+    margin: 0 0 0 5px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+}
+
+form.rpr-settings__form .rpr-table-password td .rpr-unmask-input span {
+    pointer-events: none;
+}
+
+form.rpr-settings__form .rpr-table-password svg {
+    width: 16px;
+    margin: 8px 0 0 0;
+    fill: #5b5b5b;
+    pointer-events: none;
+}
+
+form.rpr-settings__form .rpr-table-password td span.eye-blocked {
+    display: none;
+}
+
+div[id^='tagsdiv-rpr_'] ul.tagchecklist {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: 0;
+}
+
+div[id^='tagsdiv-rpr_'] ul.tagchecklist li {
+    flex: 0 1 auto;
+    background: #f0f0f1;
+    color: #0b0b0b;
+    padding: 2px 5px 2px 2px;
+    margin-right: 5px;
+    border-radius: 3px;
+    line-height: 1.2;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #b2b2b2;
+}
+
+div[id^='tagsdiv-rpr_'] ul.tagchecklist .ntdelbutton {
+    position: relative;
+    margin: 0;
+    width: 20px;
+}
+
+div[id^='tagsdiv-rpr_'] ul.tagchecklist .ntdelbutton .remove-tag-icon:before {
+    color: #818181;
+    margin: 0;
+}
+
+div[id^='tagsdiv-rpr_'] ul.tagchecklist .ntdelbutton:hover .remove-tag-icon:before {
+    color: red !important;
+}
+
+h2.rpr-settings__heading {
+    display: flex;
+}
+
+h2.rpr-settings__heading svg {
+    width: 25px;
+}

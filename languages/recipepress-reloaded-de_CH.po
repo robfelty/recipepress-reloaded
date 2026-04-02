@@ -1,0 +1,2558 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Recipepress Reloaded\n"
+"POT-Creation-Date: 2020-10-13 21:12-0500\n"
+"PO-Revision-Date: 2020-10-13 21:12-0500\n"
+"Last-Translator: Kemory Grubb <kemory@wzymedia.com>\n"
+"Language-Team: \n"
+"Language: de_CH\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: recipe-press-reloaded.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: inc/admin/class-admin.php:254
+msgid "Settings reset to default. Please refresh this page."
+msgstr ""
+"Die Einstellungen werden auf die Standardeinstellungen zurückgesetzt. Bitte "
+"aktualisieren Sie diese Seite."
+
+#: inc/admin/class-admin.php:278 inc/admin/class-admin.php:575
+#: inc/admin/posttypes/class-recipe.php:80
+#: inc/admin/settings/class-definitions.php:115
+#: inc/admin/taxonomies/class-custom-taxonomies.php:53
+#: inc/admin/taxonomies/class-ingredient.php:97
+#: inc/admin/taxonomies/class-keywords.php:61 inc/core/class-activator.php:70
+msgid "Recipes"
+msgstr "Rezepte"
+
+#: inc/admin/class-admin.php:287 inc/admin/class-admin.php:323
+#: inc/common/abstracts/class-extension.php:95
+#: inc/common/abstracts/class-extension.php:107
+#: inc/extensions/rpr-author-box/includes/settings-page.php:15
+#: inc/extensions/rpr-call-to-action/includes/settings-page.php:15
+#: inc/extensions/rpr-favorites/includes/settings-page.php:15
+#: inc/extensions/rpr-recipe-carousel/includes/settings-page.php:15
+#: inc/extensions/rpr-social-media-sharing/includes/settings-page.php:6
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: inc/admin/class-admin.php:384
+msgid "There was an error saving the recipe. Insufficient user rights."
+msgstr ""
+"Beim Speichern des Rezepts ist ein Fehler aufgetreten. Unzureichende "
+"Benutzerrechte."
+
+#. translators: "All courses".
+#: inc/admin/class-admin.php:497
+#, php-format
+msgid "All %s"
+msgstr "Alle %s"
+
+#: inc/admin/class-admin.php:553
+msgid "Twitter URL"
+msgstr "Twitter URL"
+
+#: inc/admin/class-admin.php:554
+msgid "Facebook URL"
+msgstr "Facebook URL"
+
+#: inc/admin/class-admin.php:555
+msgid "Yummly URL"
+msgstr "Yummly URL"
+
+#: inc/admin/class-admin.php:556
+msgid "Linkedin URL"
+msgstr "LinkedIn URL"
+
+#: inc/admin/class-admin.php:557
+msgid "Pinterest URL"
+msgstr "Pinterest URL"
+
+#: inc/admin/class-admin.php:558
+msgid "Youtube URL"
+msgstr "YouTube URL"
+
+#: inc/admin/class-admin.php:559
+msgid "Instagram URL"
+msgstr "Instagram URL"
+
+#: inc/admin/class-admin.php:731
+msgid ""
+"This is a major update of the Recipepress Reloaded plugin. Please backup "
+"your website before installing this update."
+msgstr ""
+"Dies ist ein wichtiges Update des Plugins \"Recipepress Reloaded\". Bitte "
+"sichern Sie Ihre Website, bevor Sie dieses Update installieren."
+
+#: inc/admin/metaboxes/class-information.php:42
+msgid "General Information"
+msgstr "Allgemeine Informationen"
+
+#: inc/admin/metaboxes/class-ingredients.php:46
+#: inc/admin/settings/class-definitions.php:76
+#: inc/admin/settings/class-definitions.php:160
+#: inc/admin/settings/class-definitions.php:170
+#: inc/admin/taxonomies/class-ingredient.php:103
+#: inc/core/class-activator.php:77
+#: inc/frontend/templates/rpr_2column/recipe.php:74
+#: inc/frontend/templates/rpr_default/recipe.php:87
+#: inc/frontend/templates/rpr_delicious/recipe.php:115
+#: inc/frontend/templates/rpr_healthy/recipe.php:81
+msgid "Ingredients"
+msgstr "Zutaten"
+
+#: inc/admin/metaboxes/class-instructions.php:58
+#: inc/frontend/templates/rpr_2column/recipe.php:88
+#: inc/frontend/templates/rpr_default/recipe.php:114
+#: inc/frontend/templates/rpr_delicious/recipe.php:127
+#: inc/frontend/templates/rpr_healthy/recipe.php:90
+msgid "Instructions"
+msgstr "Zubereitung"
+
+#: inc/admin/metaboxes/class-instructions.php:85
+msgid "The recipe instructions"
+msgstr "Die rezeptanweisungen"
+
+#: inc/admin/metaboxes/class-notes.php:47
+#: inc/frontend/templates/rpr_2column/recipe.php:109
+#: inc/frontend/templates/rpr_default/recipe.php:127
+#: inc/frontend/templates/rpr_delicious/recipe.php:140
+#: inc/frontend/templates/rpr_healthy/recipe.php:100
+msgid "Notes"
+msgstr "Notizen"
+
+#: inc/admin/metaboxes/class-nutrition.php:41
+msgid "Nutritional information"
+msgstr "Nährwert-Information"
+
+#: inc/admin/metaboxes/class-source.php:53
+#: inc/admin/metaboxes/views/rpr-source-metabox.php:23
+#: inc/admin/metaboxes/views/rpr-source-metabox.php:32
+msgid "Recipe source"
+msgstr "Rezeptquelle"
+
+#: inc/admin/metaboxes/class-video.php:45
+msgid "Recipe video"
+msgstr "Rezept video"
+
+#: inc/admin/metaboxes/views/rpr-information-metabox.php:27
+msgid "Servings/Yield"
+msgstr "Portionen"
+
+#: inc/admin/metaboxes/views/rpr-information-metabox.php:38
+msgid "Portions"
+msgstr "Portionen"
+
+#: inc/admin/metaboxes/views/rpr-information-metabox.php:42
+msgid "e.g. 2 servings, 3 loafs"
+msgstr "z.B. 2 Portionen, 3 Laibe"
+
+#: inc/admin/metaboxes/views/rpr-information-metabox.php:48
+msgid "Prep Time"
+msgstr "Vorbereitungszeit"
+
+#: inc/admin/metaboxes/views/rpr-information-metabox.php:51
+#: inc/admin/metaboxes/views/rpr-information-metabox.php:57
+#: inc/admin/metaboxes/views/rpr-information-metabox.php:63
+msgid "minutes"
+msgstr "Minuten"
+
+#: inc/admin/metaboxes/views/rpr-information-metabox.php:54
+msgid "Cook Time"
+msgstr "Kochzeit"
+
+#: inc/admin/metaboxes/views/rpr-information-metabox.php:60
+msgid "Passive Time"
+msgstr "Passive Zeit"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:53
+msgid "Amount"
+msgstr "Menge"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:54
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:334
+msgid "Unit"
+msgstr "Einheit"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:55
+#: inc/admin/settings/class-definitions.php:169
+#: inc/admin/taxonomies/class-ingredient.php:101
+#: inc/core/class-activator.php:76
+msgid "Ingredient"
+msgstr "Zutat"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:56
+msgid "Note"
+msgstr "Notiz"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:76
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:120
+msgid "Ingredient Group Title"
+msgstr "Titel der Zutatengruppe"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:79
+msgid "Ingredient group title"
+msgstr "Titel der Zutatengruppe"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:83
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:128
+msgid "Add group title"
+msgstr "Gruppentitel hinzufügen"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:87
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:132
+msgid "Remove group title"
+msgstr "Gruppentitel entfernen"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:198
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:255
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:311
+msgid "Add custom link"
+msgstr "Benutzerdefinierten Link hinzufügen"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:200
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:257
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:313
+msgid "Remove custom link"
+msgstr "Entfernen Sie den benutzerdefinierten Link"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:204
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:261
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:317
+msgid "Add ingredient"
+msgstr "Zutat hinzufügen"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:208
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:265
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:321
+msgid "Remove ingredient"
+msgstr "Zutat entfernen"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:236
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:292
+msgid "teaspoon"
+msgstr "Teelöffel"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:242
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:298
+msgid "olive oil"
+msgstr "Olivenöl"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:247
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:303
+msgid "extra virgin"
+msgstr "extra virgine"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:332
+msgid "Add an ingredient"
+msgstr "Fügen Sie eine Zutat hinzu"
+
+#: inc/admin/metaboxes/views/rpr-ingredients-metabox.php:336
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:195
+msgid "Add a group"
+msgstr "Fügen Sie eine Gruppe hinzu"
+
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:23
+msgid "Description"
+msgstr "Beschreibung"
+
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:24
+msgid "Image"
+msgstr "Bild"
+
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:37
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:76
+msgid "Instruction Group"
+msgstr "Anleitungsgruppe"
+
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:47
+msgid "Add row"
+msgstr "Zeilen hinzufügen"
+
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:50
+msgid "Remove row"
+msgstr "Zeile entfernen"
+
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:86
+msgid "Add group"
+msgstr "Gruppe hinzufügen"
+
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:89
+msgid "Remove group"
+msgstr "Gruppe entfernen"
+
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:113
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:158
+msgid "Step"
+msgstr "Schritt"
+
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:123
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:168
+msgid "Remove instruction image"
+msgstr "Anweisungsbild entfernen"
+
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:127
+msgid "Add instruction image"
+msgstr "Anweisungsbild hinzufügen"
+
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:135
+msgid "Process photograph for step"
+msgstr "Prozessfoto für Schritt"
+
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:140
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:178
+msgid "Add instruction"
+msgstr "Anweisung hinzufügen"
+
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:141
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:181
+msgid "Remove instruction"
+msgstr "Anweisung entfernen"
+
+#: inc/admin/metaboxes/views/rpr-instructions-metabox.php:191
+msgid "Add an instruction"
+msgstr "Zubereitungsschritt hinzufügen"
+
+#: inc/admin/metaboxes/views/rpr-nutrition-metabox.php:26
+msgid "Calories"
+msgstr "Kalorien"
+
+#: inc/admin/metaboxes/views/rpr-nutrition-metabox.php:32
+msgid "Joules"
+msgstr "Joules"
+
+#: inc/admin/metaboxes/views/rpr-nutrition-metabox.php:39
+msgid "Per"
+msgstr "Pro"
+
+#: inc/admin/metaboxes/views/rpr-nutrition-metabox.php:42
+msgid "serving"
+msgstr "Portion"
+
+#: inc/admin/metaboxes/views/rpr-nutrition-metabox.php:45
+msgid "recipe"
+msgstr "Rezept"
+
+#: inc/admin/metaboxes/views/rpr-nutrition-metabox.php:48
+msgid "portion"
+msgstr "Portion"
+
+#: inc/admin/metaboxes/views/rpr-nutrition-metabox.php:51
+msgid "100g"
+msgstr "100g"
+
+#: inc/admin/metaboxes/views/rpr-nutrition-metabox.php:59
+#: inc/frontend/class-template.php:1172
+msgid "Protein"
+msgstr "Eiweiß"
+
+#: inc/admin/metaboxes/views/rpr-nutrition-metabox.php:62
+#: inc/admin/metaboxes/views/rpr-nutrition-metabox.php:68
+#: inc/admin/metaboxes/views/rpr-nutrition-metabox.php:74
+msgid "grams"
+msgstr "Gramm"
+
+#: inc/admin/metaboxes/views/rpr-nutrition-metabox.php:65
+#: inc/frontend/class-template.php:1166
+msgid "Fat"
+msgstr "Fett"
+
+#: inc/admin/metaboxes/views/rpr-nutrition-metabox.php:71
+#: inc/frontend/class-template.php:1178
+msgid "Carbs"
+msgstr "Kohlenhydrate"
+
+#: inc/admin/metaboxes/views/rpr-source-metabox.php:39
+msgid "Edit Link"
+msgstr "Link bearbeiten"
+
+#: inc/admin/metaboxes/views/rpr-source-metabox.php:39
+msgid "Add Link"
+msgstr "Link hinzufügen"
+
+#: inc/admin/metaboxes/views/rpr-source-metabox.php:43
+msgid "Remove Link"
+msgstr "Link entfernen"
+
+#: inc/admin/metaboxes/views/rpr-video-metabox.php:24
+#: inc/admin/metaboxes/views/rpr-video-metabox.php:32
+msgid "Video URL"
+msgstr "Video URL"
+
+#: inc/admin/metaboxes/views/rpr-video-metabox.php:65
+msgid "Remove Video"
+msgstr "Video entfernen"
+
+#: inc/admin/metaboxes/views/rpr-video-metabox.php:68
+msgid "Fetch Video"
+msgstr "Video abrufen"
+
+#: inc/admin/metaboxes/views/rpr-video-metabox.php:76
+msgid "The recipe's video if there is one."
+msgstr "Das Rezeptvideo, falls vorhanden."
+
+#: inc/admin/posttypes/class-recipe.php:78
+#: inc/admin/settings/class-definitions.php:114 inc/core/class-activator.php:69
+#: inc/core/class-shortcodes.php:225
+#: inc/frontend/shortcodes/class-recipe-collection.php:218
+#: inc/frontend/shortcodes/class-recipe-list.php:194
+msgid "Recipe"
+msgstr "Rezept"
+
+#. translators: Please ignore.
+#: inc/admin/posttypes/class-recipe.php:156
+#: inc/admin/posttypes/class-recipe.php:166
+#, php-format
+msgid "New %1$s"
+msgstr "Neue %s"
+
+#. translators: Please ignore.
+#: inc/admin/posttypes/class-recipe.php:158
+#: inc/admin/taxonomies/class-custom-taxonomies.php:98
+#: inc/admin/taxonomies/class-ingredient.php:141
+#: inc/admin/taxonomies/class-keywords.php:102
+#, php-format
+msgid "Add New %1$s"
+msgstr "Neues %1$s hinzufügen"
+
+#: inc/admin/posttypes/class-recipe.php:159
+#, php-format
+msgid "All %1$s"
+msgstr "Alle %1$s"
+
+#. translators: Please ignore.
+#: inc/admin/posttypes/class-recipe.php:161
+#: inc/admin/taxonomies/class-custom-taxonomies.php:102
+#: inc/admin/taxonomies/class-ingredient.php:145
+#: inc/admin/taxonomies/class-keywords.php:106
+#, php-format
+msgid "Edit %1$s"
+msgstr "%1$s bearbeiten"
+
+#. translators: Please ignore.
+#: inc/admin/posttypes/class-recipe.php:168
+#: inc/admin/taxonomies/class-custom-taxonomies.php:106
+#: inc/admin/taxonomies/class-ingredient.php:149
+#: inc/admin/taxonomies/class-keywords.php:110
+#, php-format
+msgid "No %1$s Found"
+msgstr "Keine %1$s gefunden"
+
+#. translators: Please ignore.
+#: inc/admin/posttypes/class-recipe.php:170
+#, php-format
+msgid "No %1$s Found in Trash"
+msgstr "Keine%1$s Fund im Papierkorb"
+
+#. translators: Please ignore.
+#: inc/admin/posttypes/class-recipe.php:172
+#, php-format
+msgid "Parent %1$s:"
+msgstr "Übergeordnetes Element %1$s:"
+
+#. translators: Please ignore.
+#: inc/admin/posttypes/class-recipe.php:174
+#: inc/admin/taxonomies/class-custom-taxonomies.php:110
+#: inc/admin/taxonomies/class-ingredient.php:153
+#: inc/admin/taxonomies/class-keywords.php:114
+#, php-format
+msgid "Search %1$s"
+msgstr "Suche %1$s"
+
+#. translators: Please ignore.
+#: inc/admin/posttypes/class-recipe.php:177
+#: inc/admin/taxonomies/class-custom-taxonomies.php:115
+#: inc/admin/taxonomies/class-ingredient.php:157
+#: inc/admin/taxonomies/class-keywords.php:118
+#, php-format
+msgid "View %1$s"
+msgstr "Produkt ansehen %1$s"
+
+#: inc/admin/posttypes/class-recipe.php:178
+msgid "Recipe photo"
+msgstr "Rezeptfoto"
+
+#: inc/admin/posttypes/class-recipe.php:179
+msgid "Set featured photo"
+msgstr "Stellen Sie das vorgestellte Foto ein"
+
+#: inc/admin/posttypes/class-recipe.php:180
+msgid "Remove featured photo"
+msgstr "Entfernen Sie das vorgestellte Foto"
+
+#: inc/admin/posttypes/class-recipe.php:181
+msgid "Use as featured photo"
+msgstr "Als abgebildetes Foto verwenden"
+
+#: inc/admin/posttypes/class-recipe.php:404
+#: inc/admin/posttypes/class-recipe.php:407
+msgid "Recipe updated."
+msgstr "Rezept aktualisiert."
+
+#: inc/admin/posttypes/class-recipe.php:405
+msgid "Custom field updated."
+msgstr "Benutzerdefiniertes Feld aktualisiert."
+
+#: inc/admin/posttypes/class-recipe.php:406
+msgid "Custom field deleted."
+msgstr "Benutzerdefiniertes Feld gelöscht."
+
+#. translators: %s: date and time of the revision.
+#: inc/admin/posttypes/class-recipe.php:409
+#, php-format
+msgid "Recipe restored to revision from %s"
+msgstr "Rezept von %s auf Revision wiederhergestellt"
+
+#: inc/admin/posttypes/class-recipe.php:410
+msgid "Recipe published."
+msgstr "Rezept veröffentlicht."
+
+#: inc/admin/posttypes/class-recipe.php:411
+msgid "Recipe saved."
+msgstr "Rezept gespeichert."
+
+#: inc/admin/posttypes/class-recipe.php:412
+msgid "Recipe submitted."
+msgstr "Rezept eingereicht."
+
+#: inc/admin/posttypes/class-recipe.php:414
+#, php-format
+msgid "Recipe scheduled for: <strong>%1$s</strong>."
+msgstr "Rezept für: <strong>%1$s</strong>geplant ."
+
+#. translators: Publish box date format, see http://php.net/date.
+#: inc/admin/posttypes/class-recipe.php:416
+msgid "M j, Y @ G:i"
+msgstr "M j, Y @ G:i"
+
+#: inc/admin/posttypes/class-recipe.php:418
+msgid "Recipe draft updated."
+msgstr "Rezeptentwurf aktualisiert."
+
+#: inc/admin/posttypes/class-recipe.php:424
+msgid "View recipe"
+msgstr "Rezept betrachten"
+
+#: inc/admin/posttypes/class-recipe.php:430
+msgid "Preview recipe"
+msgstr "Vorschau Rezept"
+
+#: inc/admin/posttypes/class-recipe.php:457
+#, php-format
+msgid "%s "
+msgid_plural "%s "
+msgstr[0] "%s "
+msgstr[1] "%s "
+
+#: inc/admin/rest/class-recipes.php:157 inc/admin/rest/class-recipes.php:179
+#: inc/admin/rest/class-recipes.php:200 inc/admin/rest/class-recipes.php:221
+msgid "message"
+msgstr "Nachricht"
+
+#. translators: %s: This can be ignored.
+#: inc/admin/settings/class-callbacks.php:119
+#, php-format
+msgid ""
+"The callback function used for the <strong>%s</strong> setting is missing."
+msgstr "Die Callback-Funktion für die Einstellung <strong>%s</strong> fehlt."
+
+#. translators: %s: This can be ignored.
+#: inc/admin/settings/class-callbacks.php:215
+#, php-format
+msgid "Options for <strong>%s</strong> multicheck is missing."
+msgstr "Es fehlen Optionen für <strong> %s </strong> die Mehrfachauswahl."
+
+#. translators: %s: This can be ignored.
+#: inc/admin/settings/class-callbacks.php:264
+#: inc/admin/settings/class-callbacks.php:309
+#, php-format
+msgid "Options for <strong>%s</strong> radio is missing."
+msgstr ""
+"Es fehlen Optionen für <strong> %s </strong> für die Optionsschaltfläche."
+
+#: inc/admin/settings/class-callbacks.php:335
+#, fuzzy
+#| msgid "Recipe template"
+msgid "The selected recipe template"
+msgstr "Rezeptvorlage"
+
+#: inc/admin/settings/class-callbacks.php:733
+msgid "Upload File"
+msgstr "Datei hochladen"
+
+#: inc/admin/settings/class-callbacks.php:754
+#: inc/admin/settings/class-callbacks.php:775
+msgid "Download File"
+msgstr "Datei runterladen"
+
+#: inc/admin/settings/class-definitions.php:75
+msgid "General"
+msgstr "Allgemein"
+
+#: inc/admin/settings/class-definitions.php:77
+#: inc/frontend/widgets/class-recipe-archive-filter.php:290
+msgid "Taxonomies"
+msgstr "Taxonomien"
+
+#: inc/admin/settings/class-definitions.php:78
+msgid "Metadata"
+msgstr "Meta-Daten"
+
+#: inc/admin/settings/class-definitions.php:79
+msgid "Units"
+msgstr "Einheiten"
+
+#: inc/admin/settings/class-definitions.php:80
+msgid "Components"
+msgstr "Komponenten"
+
+#: inc/admin/settings/class-definitions.php:81
+msgid "Appearance"
+msgstr "Erscheinungsbild"
+
+#: inc/admin/settings/class-definitions.php:82
+msgid "Advanced"
+msgstr "Erweitert"
+
+#: inc/admin/settings/class-definitions.php:105
+msgid "General Settings"
+msgstr "Allgemeine Einstellungen"
+
+#: inc/admin/settings/class-definitions.php:113
+#: inc/admin/settings/class-definitions.php:168
+#: inc/admin/settings/class-definitions.php:576
+msgid "Labels"
+msgstr "Etiketten"
+
+#: inc/admin/settings/class-definitions.php:116
+#: inc/admin/settings/class-definitions.php:171
+#: inc/admin/settings/class-settings.php:152
+msgid "The singular form of the label"
+msgstr "Die Singularform des Etiketts"
+
+#: inc/admin/settings/class-definitions.php:117
+#: inc/admin/settings/class-definitions.php:172
+#: inc/admin/settings/class-settings.php:153
+msgid "The plural form of the label"
+msgstr "Die Pluralform des Etiketts"
+
+#: inc/admin/settings/class-definitions.php:122
+msgid "404s errors"
+msgstr "404er-Fehler"
+
+#: inc/admin/settings/class-definitions.php:123
+msgid ""
+"Please note. If you have set up everything correctly here but now WordPress "
+"is giving you an 404 (not found) error,\n"
+"\t\t\t\t\t try flushing your permalink settings. Visit \"Settings\" -> "
+"\"Permalinks\" and click the \"Save Changes\" button without changing "
+"anything."
+msgstr ""
+"Bitte beachten Sie. Wenn Sie hier alles richtig eingerichtet haben, aber "
+"jetzt WordPress Ihnen einen 404 (nicht gefunden) Fehler gibt,\n"
+"Versuchen Sie, Ihre Permalink-Einstellungen zu löschen. Besuchen Sie "
+"\"Einstellungen\" -> \"Permalinks\" und klicken Sie auf die Schaltfläche "
+"\"Änderungen speichern\", ohne etwas zu ändern."
+
+#: inc/admin/settings/class-definitions.php:128
+msgid "Recipes on homepage"
+msgstr "Rezepte auf der Homepage"
+
+#: inc/admin/settings/class-definitions.php:129
+msgid ""
+"Defines if recipes should be displayed on the homepage like \"normal\" posts."
+msgstr ""
+"Legt fest, ob Rezepte wie \"normale\" Beiträge auf der Homepage angezeigt "
+"werden sollen."
+
+#: inc/admin/settings/class-definitions.php:133
+msgid "Archive page"
+msgstr "Archivseite"
+
+#: inc/admin/settings/class-definitions.php:134
+msgid "Defines what to show of your recipes on the archive page."
+msgstr ""
+"Definiert, was von Ihren Rezepten auf der Archivseite angezeigt werden soll."
+
+#: inc/admin/settings/class-definitions.php:136
+msgid "The entire recipe"
+msgstr "Das gesamte Rezept"
+
+#: inc/admin/settings/class-definitions.php:137
+msgid "Only the excerpt"
+msgstr "Nur den Auszug"
+
+#: inc/admin/settings/class-definitions.php:142
+msgid "Recipes in RSS feed"
+msgstr "Rezepte im RSS-Feed"
+
+#: inc/admin/settings/class-definitions.php:143
+msgid "Should recipes be included in your RSS feed?"
+msgstr "Sollten Rezepte in Ihren RSS-Feed aufgenommen werden?"
+
+#: inc/admin/settings/class-definitions.php:147
+msgid "Use Gutenberg"
+msgstr "Verwenden Sie Gutenberg"
+
+#: inc/admin/settings/class-definitions.php:148
+msgid ""
+"Enable to use the new Gutenberg editor. The \"ClassicPress\" plugin is "
+"needed for this option."
+msgstr ""
+"Aktivieren Sie die Verwendung des neuen Gutenberg-Editors. Für diese Option "
+"wird das Plugin \"ClassicPress\" benötigt."
+
+#: inc/admin/settings/class-definitions.php:177
+msgid "Link target"
+msgstr "Link-Ziel"
+
+#: inc/admin/settings/class-definitions.php:178
+msgid "Target of links in the ingredient list."
+msgstr "Ziel der Links in der Zutaten-Liste"
+
+#: inc/admin/settings/class-definitions.php:180
+msgid "No ingredient links"
+msgstr "Keine zutaten-Links"
+
+#: inc/admin/settings/class-definitions.php:181
+msgid "Only link to ingredient archive page"
+msgstr "Nur Link zur Inhaltsstoffarchivseite"
+
+#: inc/admin/settings/class-definitions.php:182
+msgid "Custom link if provided, otherwise archive page"
+msgstr "Benutzerdefinierter link, falls vorhanden, andernfalls archivseite"
+
+#: inc/admin/settings/class-definitions.php:183
+msgid "Custom links if provided, otherwise no link"
+msgstr "Benutzerdefinierte links, falls angegeben, ansonsten kein link"
+
+#: inc/admin/settings/class-definitions.php:188
+msgid "Ingredient separator"
+msgstr "Zutatenabscheider"
+
+#: inc/admin/settings/class-definitions.php:189
+msgid "Decide how to display remarks or comments on your ingredients."
+msgstr ""
+"Entscheiden Sie, wie Hinweise oder Bemerkungen  zu Ihren Zutaten angezeigt "
+"werden sollen."
+
+#: inc/admin/settings/class-definitions.php:191
+msgid "None: 1 egg preferably free-range or organic"
+msgstr ""
+"Keine: 1 Ei vorzugsweise aus Freilandhaltung oder aus biologischem Anbau"
+
+#: inc/admin/settings/class-definitions.php:192
+msgid "Brackets: 1 egg (preferably free-range or organic)"
+msgstr ""
+"Klammern: 1 Ei (vorzugsweise aus Freilandhaltung oder aus biologischem Anbau)"
+
+#: inc/admin/settings/class-definitions.php:193
+msgid "Comma: 1 egg, preferably free-range or organic"
+msgstr ""
+"Komma: 1 Ei, vorzugsweise aus Freilandhaltung oder aus biologischem Anbau"
+
+#: inc/admin/settings/class-definitions.php:198
+msgid "Automatic pluralization"
+msgstr "Automatische Pluralisierung"
+
+#: inc/admin/settings/class-definitions.php:199
+msgid ""
+"Automatically create ingredient plurals if more than one is used. If active "
+"entering \"2 onion\" will be rendered as \"2 onions\n"
+"This only can handle regular plurals. For irregular plurals please enter the "
+"correct plural on the ingredients page."
+msgstr ""
+"Erstellen Sie automatisch Zutatenpluralformen, wenn mehr als eine verwendet "
+"wird. Bei aktiver Eingabe wird \"2 Zwiebeln\" als \"2 Zwiebeln\" "
+"dargestellt\n"
+"Dies kann nur mit normalen Pluralformen umgehen. Bei unregelmäßigen "
+"Pluralformen geben Sie bitte den richtigen Plural auf der Zutaten-Seite ein."
+
+#: inc/admin/settings/class-definitions.php:212
+msgid "Categories and Tags"
+msgstr "Kategorien und Stichworte"
+
+#: inc/admin/settings/class-definitions.php:220
+msgid "Use WP Categories"
+msgstr "Verwenden Sie WP-Kategorien"
+
+#: inc/admin/settings/class-definitions.php:221
+msgid ""
+"Categories are a built-in taxonomy of WordPress core. You can use them to "
+"organize your recipes as well."
+msgstr ""
+"Kategorien sind eine integrierte Taxonomie des WordPress-Kerns. Sie können "
+"sie auch verwenden, um Ihre Rezepte zu organisieren."
+
+#: inc/admin/settings/class-definitions.php:225
+msgid "Show Categories"
+msgstr "Kategorien anzeigen"
+
+#: inc/admin/settings/class-definitions.php:226
+msgid "Do you want to show categories on the frontend of your recipes?"
+msgstr "Möchten Sie Kategorien im Frontend Ihrer Rezepte anzeigen?"
+
+#: inc/admin/settings/class-definitions.php:230
+msgid "Use WP Tags"
+msgstr "Verwenden Sie WP-Tags"
+
+#: inc/admin/settings/class-definitions.php:231
+msgid ""
+"Tags are a built-in taxonomy of WordPress core. You can use them to organize "
+"your recipes as well."
+msgstr ""
+"Tags sind eine integrierte Taxonomie des WordPress-Kerns. Sie können sie "
+"auch verwenden, um Ihre Rezepte zu organisieren."
+
+#: inc/admin/settings/class-definitions.php:235
+msgid "Show Tags"
+msgstr "Schlagwörter anzeigen"
+
+#: inc/admin/settings/class-definitions.php:236
+msgid "Do you want to show tags on the frontend of your recipes?"
+msgstr "Möchten Sie Tags im Frontend Ihrer Rezepte anzeigen?"
+
+#: inc/admin/settings/class-definitions.php:244
+msgid "Recipe Taxonomies"
+msgstr "Rezept Taxonomien"
+
+#: inc/admin/settings/class-definitions.php:252
+msgid "Taxonomy Selection"
+msgstr "Taxonomie Auswahl"
+
+#: inc/admin/settings/class-definitions.php:253
+msgid "Create and delete your recipe taxonomies here."
+msgstr "Erstellen und löschen Sie hier Ihre Rezepttaxonomien."
+
+#: inc/admin/settings/class-definitions.php:266
+msgid "Recipe Metadata"
+msgstr "Rezept-Metadaten"
+
+#: inc/admin/settings/class-definitions.php:274
+msgid "Use source field"
+msgstr "Quellfeld verwenden"
+
+#: inc/admin/settings/class-definitions.php:275
+msgid ""
+"Check this to enable the use of a source field allowing you to enter "
+"restaurants, books or websites as source of your recipe."
+msgstr ""
+"Aktivieren Sie diese Option, um die Verwendung eines Quellfelds zu "
+"ermöglichen, in das Sie Restaurants, Bücher oder Websites als Quelle für Ihr "
+"Rezept eingeben können."
+
+#: inc/admin/settings/class-definitions.php:279
+msgid "Use nutrition field"
+msgstr "Verwenden Sie das Ernährungsfeld"
+
+#: inc/admin/settings/class-definitions.php:280
+msgid ""
+"Check this to enable the use of nutritional information like calorific "
+"value, protein, fat and carbohydrates."
+msgstr ""
+"Überprüfen Sie dies, um die Verwendung von Nährwertinformationen wie "
+"Brennwert, Protein, Fett und Kohlenhydraten zu ermöglichen."
+
+#: inc/admin/settings/class-definitions.php:284
+msgid "Use video field"
+msgstr "Videofeld verwenden"
+
+#: inc/admin/settings/class-definitions.php:285
+msgid "Check this to enable the video metadata in your recipe's JSON-LD schema"
+msgstr ""
+"Aktivieren Sie diese Option, um die Videometadaten im JSON-LD-Schema Ihres "
+"Rezepts zu aktivieren"
+
+#: inc/admin/settings/class-definitions.php:293
+msgid "Recipe Diet"
+msgstr "Rezept-Diät"
+
+#: inc/admin/settings/class-definitions.php:297
+msgid "Diet Restriction"
+msgstr "Diät-Einschränkung"
+
+#: inc/admin/settings/class-definitions.php:298
+msgid ""
+"A diet restricted to certain foods or preparations for cultural, religious, "
+"health or lifestyle reasons."
+msgstr ""
+"Eine Diät, die aus kulturellen, religiösen, gesundheitlichen oder "
+"Lebensstilgründen auf bestimmte Lebensmittel oder Zubereitungen beschränkt "
+"ist."
+
+#: inc/admin/settings/class-definitions.php:307
+msgid "Recipe Ingredient Units"
+msgstr "Rezept Zutateneinheiten"
+
+#: inc/admin/settings/class-definitions.php:315
+msgid "Use ingredient unit list"
+msgstr "Verwenden Sie die Liste der Zutateneinheiten"
+
+#: inc/admin/settings/class-definitions.php:316
+msgid ""
+"Check this to use a list of units for entering ingredients. You can define "
+"the list below. We recommend using a well defined list of units as this will "
+"make your recipes more consistent and readable."
+msgstr ""
+"Überprüfen Sie dies, um eine Liste der Einheiten für die Eingabe von Zutaten "
+"zu verwenden. Sie können die folgende Liste definieren. Wir empfehlen die "
+"Verwendung einer genau definierten Liste von Einheiten, da dies Ihre Rezepte "
+"konsistenter und lesbarer macht."
+
+#: inc/admin/settings/class-definitions.php:320
+msgid "Ingredient Units List"
+msgstr "Liste der Zutateneinheiten"
+
+#: inc/admin/settings/class-definitions.php:321
+msgid ""
+"Unit list for ingredients. We recommend using a well defined list of units "
+"as this will make your recipes more consistent and readable."
+msgstr ""
+"Einheitenliste für Zutaten. Wir empfehlen die Verwendung einer genau "
+"definierten Liste von Einheiten, da dies Ihre Rezepte konsistenter und "
+"lesbarer macht."
+
+#: inc/admin/settings/class-definitions.php:330
+msgid "Use serving size unit list"
+msgstr "Verwenden Sie die Liste der Portionsgrößeneinheiten"
+
+#: inc/admin/settings/class-definitions.php:331
+msgid ""
+"Check this to use a list of units for entering serving sizes. You can define "
+"the list below. We recommend using a well defined list of units as this will "
+"make your recipes more consistent and readable."
+msgstr ""
+"Aktivieren Sie diese Option, um eine Liste der Einheiten für die Eingabe der "
+"Portionsgrößen zu verwenden. Sie können die folgende Liste definieren. Wir "
+"empfehlen die Verwendung einer genau definierten Liste von Einheiten, da "
+"dies Ihre Rezepte konsistenter und lesbarer macht."
+
+#: inc/admin/settings/class-definitions.php:335
+msgid "Serving Size Units List"
+msgstr "Liste der Serving Size Units"
+
+#: inc/admin/settings/class-definitions.php:336
+msgid ""
+"Unit list for serving sizes. We recommend using a well defined list of units "
+"as this will make your recipes more consistent and readable."
+msgstr ""
+"Einheitenliste für Portionsgrößen. Wir empfehlen die Verwendung einer genau "
+"definierten Liste von Einheiten, da dies Ihre Rezepte konsistenter und "
+"lesbarer macht."
+
+#: inc/admin/settings/class-definitions.php:349
+msgid "Reader Comment Rating"
+msgstr "Leserkommentar Bewertung"
+
+#: inc/admin/settings/class-definitions.php:357
+msgid "Comment Ratings"
+msgstr "Kommentarbewertungen"
+
+#: inc/admin/settings/class-definitions.php:358
+msgid "Enable reader submitted ratings in the comment form"
+msgstr "Vom Leser übermittelte Bewertungen im Kommentar aktivieren"
+
+#: inc/admin/settings/class-definitions.php:362
+msgid "Rating Label"
+msgstr "Bewertungsbeschriftung"
+
+#: inc/admin/settings/class-definitions.php:363
+msgid "Enter the label to show before the comment 5 star rating field"
+msgstr ""
+"Geben Sie die Beschriftung ein, die vor dem Kommentarfeld mit 5 Sternen "
+"angezeigt werden soll"
+
+#: inc/admin/settings/class-definitions.php:368
+msgid "Rating Star Color"
+msgstr "Bewertung Sternfarbe"
+
+#: inc/admin/settings/class-definitions.php:369
+msgid "Background color for the reader comment 5 star rating"
+msgstr "Hintergrundfarbe für den 5-Sterne Kommentar"
+
+#: inc/admin/settings/class-definitions.php:378
+msgid "Recipe Widgets"
+msgstr "Rezept-Widgets"
+
+#: inc/admin/settings/class-definitions.php:386
+msgid "Recipe Tag Cloud"
+msgstr "Rezept Tag Cloud"
+
+#: inc/admin/settings/class-definitions.php:387
+msgid "Enable the recipe tag cloud widget"
+msgstr "Aktivieren Sie das Rezept-Tag-Cloud-Widget"
+
+#: inc/admin/settings/class-definitions.php:391
+msgid "Recipe Taxonomy List"
+msgstr "Rezepttaxonomieliste"
+
+#: inc/admin/settings/class-definitions.php:392
+msgid "Enable the recipe taxonomy list widget"
+msgstr "Aktivieren Sie das Widget für die Rezepttaxonomieliste"
+
+#: inc/admin/settings/class-definitions.php:396
+msgid "Recipe Calendar"
+msgstr "Rezeptkalender"
+
+#: inc/admin/settings/class-definitions.php:397
+msgid "Enable the recipe calendar widget"
+msgstr "Aktivieren Sie das Rezeptkalender-Widget"
+
+#: inc/admin/settings/class-definitions.php:401
+msgid "Recipe Author Profile"
+msgstr "Rezept Autorenprofil"
+
+#: inc/admin/settings/class-definitions.php:402
+msgid "Enable the recipe author profile widget"
+msgstr "Aktivieren Sie das Profilautor-Widget des Rezepts"
+
+#: inc/admin/settings/class-definitions.php:406
+msgid "Recipe Archive Filter"
+msgstr "Rezeptarchivfilter"
+
+#: inc/admin/settings/class-definitions.php:407
+msgid "Enable the recipe archive page filter widget"
+msgstr "Aktivieren Sie das Filter-Widget für Rezeptarchivseiten"
+
+#: inc/admin/settings/class-definitions.php:415
+msgid "Recipe Templates"
+msgstr "Rezeptvorlagen"
+
+#: inc/admin/settings/class-definitions.php:423
+msgid "Recipe template"
+msgstr "Rezeptvorlage"
+
+#: inc/admin/settings/class-definitions.php:424
+msgid "Select how you want your recipes to look."
+msgstr "Wählen Sie aus, wie Ihre Rezepte aussehen sollen."
+
+#: inc/admin/settings/class-definitions.php:429
+msgid "Clickable Images"
+msgstr "Anklickbare Bilder"
+
+#: inc/admin/settings/class-definitions.php:430
+msgid "Best used in combination with a Lightbox plugin."
+msgstr "Am besten in Kombination mit einem Lightbox-Plugin."
+
+#: inc/admin/settings/class-definitions.php:434
+msgid "Position of instruction images"
+msgstr "Position des Zubereitungs-Bild"
+
+#: inc/admin/settings/class-definitions.php:435
+msgid ""
+"Decide whether your instruction images should be display next to the "
+"instructions or below."
+msgstr ""
+"Entscheiden Sie, ob Ihre Anweisungsbilder neben den Anweisungen oder "
+"darunter angezeigt werden sollen."
+
+#: inc/admin/settings/class-definitions.php:437
+msgid "Right of instruction"
+msgstr "Rechts neben der Beschreibung"
+
+#: inc/admin/settings/class-definitions.php:438
+msgid "Below the instruction"
+msgstr "Unterhalb der Beschreibung"
+
+#: inc/admin/settings/class-definitions.php:439
+msgid "Hide the image"
+msgstr "Bild verstecken"
+
+#: inc/admin/settings/class-definitions.php:444
+msgid "Use icons"
+msgstr "Icons verwenden"
+
+#: inc/admin/settings/class-definitions.php:445
+msgid ""
+"Icons not only look nice. They also can save you space. With this setting "
+"activated this layout will display \"35min\" instead of \"READY IN: 35min\"."
+msgstr ""
+"Icons sehen nicht nur gut aus. Sie können Ihnen auch Platz sparen. Wenn "
+"diese Einstellung aktiviert ist, zeigt dieses Layout \"35min\" anstelle von "
+"\"READY IN: 35min\" an."
+
+#: inc/admin/settings/class-definitions.php:449
+msgid "Print area class"
+msgstr "CSS-Klasse des Druckbereichs"
+
+#: inc/admin/settings/class-definitions.php:450
+msgid ""
+"Print links should only print an area of the page, usually a post. This is "
+"higly depending on wordpress theme you are using. Add here the class "
+"(prefixed by '.') or the id (prefixed by '#') of the printable area."
+msgstr ""
+"Drucklinks sollten nur einen Bereich der Seite drucken, normalerweise einen "
+"Beitrag. Dies hängt stark vom verwendeten WordPress-Thema ab. Fügen Sie hier "
+"die Klasse (mit dem Präfix '.') Oder die ID (mit dem Präfix '#') des "
+"druckbaren Bereichs hinzu."
+
+#: inc/admin/settings/class-definitions.php:455
+msgid "Do not print area class"
+msgstr "Bereichsklasse nicht drucken"
+
+#: inc/admin/settings/class-definitions.php:456
+msgid ""
+"Enter the class or ID of areas or elements that should not be printed. This "
+"is highly depending on the wordpress theme you are using. Add here the class "
+"(prefixed by '.') or the id (prefixed by '#') of the area not to be printed. "
+"Separate multiple entries with commas (',')."
+msgstr ""
+"Geben Sie die Klasse oder ID der Bereiche oder Elemente ein, die nicht "
+"gedruckt werden sollen. Dies hängt stark vom verwendeten WordPress-Thema ab. "
+"Fügen Sie hier die Klasse (mit dem Präfix '.') Oder die ID (mit dem Präfix "
+"'#') des nicht zu druckenden Bereichs hinzu. Trennen Sie mehrere Einträge "
+"durch Kommas (',')."
+
+#: inc/admin/settings/class-definitions.php:465
+#: inc/core/class-activator.php:144 inc/frontend/class-template.php:1420
+msgid "Jump to Recipe"
+msgstr "Zum Rezept springen"
+
+#: inc/admin/settings/class-definitions.php:473
+msgid "Enable recipe jump button"
+msgstr "Rezept-Sprungtaste aktivieren"
+
+#: inc/admin/settings/class-definitions.php:474
+msgid "Enable a \"Jump to Recipe\" button"
+msgstr "Aktivieren Sie die Schaltfläche \"Zum Rezept springen\""
+
+#: inc/admin/settings/class-definitions.php:478
+#: inc/admin/settings/class-definitions.php:501
+msgid "Button's text"
+msgstr "Button Text"
+
+#: inc/admin/settings/class-definitions.php:479
+msgid "The \"Jump to Recipe\" button's text"
+msgstr "Der Text der Schaltfläche \"Zum Rezept springen\""
+
+#: inc/admin/settings/class-definitions.php:488
+msgid "Print Recipe Button"
+msgstr "Rezepttaste drucken"
+
+#: inc/admin/settings/class-definitions.php:496
+msgid "Display print button"
+msgstr "Drucktaste anzeigen"
+
+#: inc/admin/settings/class-definitions.php:497
+msgid ""
+"Adds a print link to your recipes. It's recommended to use one of the "
+"numerous print plugins for wordpress to include a print link to ALL of your "
+"posts."
+msgstr ""
+"Fügt Ihren Rezepten einen Drucklink hinzu. Es wird empfohlen, eines der "
+"zahlreichen Druck-Plugins für WordPress zu verwenden, um einen Drucklink zu "
+"ALLEN Ihren Posts aufzunehmen."
+
+#: inc/admin/settings/class-definitions.php:502
+msgid "The \"Print Recipe\" button's text"
+msgstr "Der Text der Schaltfläche \"Rezept drucken\""
+
+#: inc/admin/settings/class-definitions.php:511
+msgid "Recipe Custom Styling"
+msgstr "Rezept Benutzerdefiniertes Styling"
+
+#: inc/admin/settings/class-definitions.php:515
+msgid "Custom styles"
+msgstr "Individuelle Gestaltung (custom styles)"
+
+#: inc/admin/settings/class-definitions.php:516
+msgid "Add your custom CSS here to fine-tune the look of your recipe posts."
+msgstr ""
+"Fügen Sie hier Ihr benutzerdefiniertes CSS hinzu, um das Erscheinungsbild "
+"Ihrer Rezeptbeiträge zu optimieren."
+
+#: inc/admin/settings/class-definitions.php:528
+msgid "YouTube Video API"
+msgstr "YouTube Video API"
+
+#: inc/admin/settings/class-definitions.php:536
+msgid "YouTube API Key"
+msgstr "YouTube API-Key"
+
+#: inc/admin/settings/class-definitions.php:537
+msgid "Your YouTube Data API key (v3)"
+msgstr "Dein YouTube-Daten-API-Schlüssel (v3)"
+
+#: inc/admin/settings/class-definitions.php:542
+msgid "Ping YouTube weekly"
+msgstr "Ping YouTube wöchentlich"
+
+#: inc/admin/settings/class-definitions.php:543
+msgid "Enable this to keep your YouTube API key active."
+msgstr "Aktiviere dies, um deinen YouTube-API-Schlüssel aktiv zu halten."
+
+#: inc/admin/settings/class-definitions.php:579
+#, php-format
+msgid "The singular form of the <b>\"%1$s\"</b> taxonomy label"
+msgstr "Die Singularform des Taxonomie-Labels <b>\"%1$s\"</b>"
+
+#: inc/admin/settings/class-definitions.php:580
+#, php-format
+msgid "The plural form of the <b>\"%1$s\"</b> taxonomy label"
+msgstr "Die Pluralform des Taxonomie-Labels <b>\"%1$s\"</b>"
+
+#: inc/admin/settings/class-definitions.php:585
+msgid "Hierarchical"
+msgstr "Hierarchisch"
+
+#: inc/admin/settings/class-definitions.php:586
+msgid "Is this custom taxonomy hierarchical?"
+msgstr "Ist die individuelle Kategorie hierarchisch?"
+
+#: inc/admin/settings/class-definitions.php:590
+msgid "Show in table"
+msgstr "In Tabelle anzeigen"
+
+#: inc/admin/settings/class-definitions.php:591
+msgid "Show this custom taxonomy on the admin table"
+msgstr "Zeige die individuelle Kategorie in der Admintabelle"
+
+#: inc/admin/settings/class-definitions.php:595
+msgid "Show filter"
+msgstr "Filter anzeigen"
+
+#: inc/admin/settings/class-definitions.php:596
+msgid "Show a drop-down filter for this taxonomy on the admin table"
+msgstr "Zeige eine Dropdown-Liste für diese Kategorie auf der Admin Tabelle"
+
+#: inc/admin/settings/class-definitions.php:600
+msgid "Show on frontend"
+msgstr "Im Frontend anzeigen"
+
+#: inc/admin/settings/class-definitions.php:601
+msgid "Show this taxonomy on the frontend"
+msgstr "Zeigen Sie diese Taxonomie im Frontend"
+
+#: inc/admin/settings/class-sanitization.php:119
+msgid "Settings updated."
+msgstr "Einstellungen aktualisiert."
+
+#: inc/admin/settings/class-settings.php:151
+msgid "Please enter 2 or more lower-case characters."
+msgstr "Bitte 2 oder mehr Kleinbuchstaben eingeben."
+
+#: inc/admin/settings/views/metabox-display.php:28
+msgid "Reset Settings"
+msgstr "Einstellungen zurücksetzen"
+
+#: inc/admin/taxonomies/class-custom-taxonomies.php:99
+#: inc/admin/taxonomies/class-ingredient.php:142
+#: inc/admin/taxonomies/class-keywords.php:103
+#, php-format
+msgid "Add or remove %1$s"
+msgstr "%1$s hinzufügen oder entfernen"
+
+#: inc/admin/taxonomies/class-custom-taxonomies.php:101
+#: inc/admin/taxonomies/class-ingredient.php:144
+#: inc/admin/taxonomies/class-keywords.php:105
+#, php-format
+msgid "Choose from most used %1$s"
+msgstr "Wählen Sie aus den am häufigsten verwendeten %1$s"
+
+#: inc/admin/taxonomies/class-custom-taxonomies.php:105
+#: inc/admin/taxonomies/class-ingredient.php:148
+#: inc/admin/taxonomies/class-keywords.php:109
+#, php-format
+msgid "New %1$s Name"
+msgstr "Neuer %1$s Name"
+
+#: inc/admin/taxonomies/class-custom-taxonomies.php:107
+#: inc/admin/taxonomies/class-custom-taxonomies.php:108
+#: inc/admin/taxonomies/class-ingredient.php:150
+#: inc/admin/taxonomies/class-ingredient.php:151
+#: inc/admin/taxonomies/class-keywords.php:111
+#: inc/admin/taxonomies/class-keywords.php:112
+#, php-format
+msgid "Parent %1$s"
+msgstr "Eltern %1$s"
+
+#: inc/admin/taxonomies/class-custom-taxonomies.php:109
+#: inc/admin/taxonomies/class-ingredient.php:152
+#: inc/admin/taxonomies/class-keywords.php:113
+#, php-format
+msgid "Popular %1$s"
+msgstr "Beliebt %1$s"
+
+#: inc/admin/taxonomies/class-custom-taxonomies.php:111
+#, fuzzy, php-format
+#| msgid "← Back to %1$s"
+msgid "Back to %1$s"
+msgstr "← Zurück zu%1$s"
+
+#: inc/admin/taxonomies/class-custom-taxonomies.php:112
+#: inc/admin/taxonomies/class-ingredient.php:154
+#: inc/admin/taxonomies/class-keywords.php:115
+#, php-format
+msgid "Separate %1$s with commas"
+msgstr "%1$s mit Kommas trennen"
+
+#: inc/admin/taxonomies/class-custom-taxonomies.php:114
+#: inc/admin/taxonomies/class-ingredient.php:156
+#: inc/admin/taxonomies/class-keywords.php:117
+#, php-format
+msgid "Update %1$s"
+msgstr "%1$s bearbeiten"
+
+#: inc/admin/taxonomies/class-custom-taxonomies.php:171
+#, php-format
+msgid "Default %s"
+msgstr "Standard %s"
+
+#: inc/admin/taxonomies/class-custom-taxonomies.php:177
+msgid ""
+"Set this taxonomy term as the default for recipes without a selected term."
+msgstr ""
+"Legen Sie diesen Taxonomiebegriff als Standard für Rezepte ohne ausgewählten "
+"Begriff fest."
+
+#: inc/admin/taxonomies/class-custom-taxonomies.php:268
+#, fuzzy
+#| msgid "Default %s"
+msgid "Default"
+msgstr "Standard %s"
+
+#: inc/admin/taxonomies/class-ingredient.php:158
+#, php-format
+msgid "← Back to %1$s"
+msgstr "← Zurück zu%1$s"
+
+#: inc/admin/taxonomies/class-ingredient.php:191
+#: inc/admin/taxonomies/class-ingredient.php:254
+msgid "Link"
+msgstr "Link"
+
+#: inc/admin/taxonomies/class-ingredient.php:196
+#: inc/admin/taxonomies/class-ingredient.php:256
+msgid ""
+"An external link you can add to this ingredient. Useful for Amazon referral "
+"links."
+msgstr ""
+"Ein externer Link, den Sie zu dieser Zutat hinzufügen können. Nützlich für "
+"Amazon-Empfehlungslinks."
+
+#: inc/admin/taxonomies/class-ingredient.php:203
+#: inc/admin/taxonomies/class-ingredient.php:260
+msgid "Plural name"
+msgstr "Name (Mehrzahl)"
+
+#: inc/admin/taxonomies/class-ingredient.php:208
+#: inc/admin/taxonomies/class-ingredient.php:263
+msgid ""
+"The plural name of the ingredient. If empty the default pluralization \"s\" "
+"will be used."
+msgstr ""
+"Der Pluralname der Zutat. Wenn leer, wird die Standardpluralisierung \"s\" "
+"verwendet."
+
+#: inc/admin/taxonomies/class-ingredient.php:214
+#: inc/admin/taxonomies/class-ingredient.php:267
+msgid "Thumbnail image"
+msgstr "Thumbnail image"
+
+#: inc/admin/taxonomies/class-ingredient.php:219
+#: inc/admin/taxonomies/class-ingredient.php:272
+msgid "Photo of this ingredient."
+msgstr "Foto dieser Zutat."
+
+#: inc/admin/taxonomies/class-ingredient.php:227
+#: inc/admin/taxonomies/class-ingredient.php:276
+msgid "Use in listings"
+msgstr "In Listen verwenden"
+
+#: inc/admin/taxonomies/class-ingredient.php:232
+#: inc/admin/taxonomies/class-ingredient.php:279
+msgid ""
+"Disable, if you don't want this ingredient to appear in ingredient listing. "
+"You probably don't want to have a list of all recipes using salt, sugar, etc."
+msgstr ""
+"Deaktivieren Sie diese Option, wenn diese Zutat nicht in der Zutatenliste "
+"angezeigt werden soll. Sie möchten wahrscheinlich nicht eine Liste aller "
+"Rezepte mit Salz, Zucker usw. haben."
+
+#: inc/admin/taxonomies/class-keywords.php:74
+msgid "Keywords"
+msgstr "Schlüsselwörter"
+
+#: inc/admin/taxonomies/class-keywords.php:75
+msgid "Keyword"
+msgstr "Stichwort"
+
+#: inc/admin/views/add-list-modal.php:21
+msgid "Create a Recipe List Page"
+msgstr "Erstellen Sie eine Rezeptlistenseite"
+
+#: inc/admin/views/add-list-modal.php:30
+msgid "Taxonomy Index"
+msgstr "Taxonomie-Index"
+
+#: inc/admin/views/add-list-modal.php:32
+msgid "Select your required taxonomy here"
+msgstr "Wählen Sie hier Ihre gewünschte Taxonomie aus"
+
+#: inc/admin/views/add-list-modal.php:48
+msgid "Recipe Index"
+msgstr "Rezeptindex"
+
+#: inc/admin/views/add-list-modal.php:53
+msgid "Ingredients Index"
+msgstr "Zutatenindex"
+
+#: inc/admin/views/add-list-modal.php:59
+#: inc/admin/views/add-recipe-modal.php:86
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: inc/admin/views/add-list-modal.php:63 inc/core/class-shortcodes.php:226
+#: inc/core/class-shortcodes.php:227
+#: inc/frontend/shortcodes/class-recipe-collection.php:219
+#: inc/frontend/shortcodes/class-recipe-collection.php:220
+#: inc/frontend/shortcodes/class-recipe-list.php:195
+#: inc/frontend/shortcodes/class-recipe-list.php:196
+msgid "Insert"
+msgstr "Einfügen"
+
+#: inc/admin/views/add-recipe-modal.php:18
+msgid "Insert recipe"
+msgstr "Rezept einfügen"
+
+#: inc/admin/views/add-recipe-modal.php:20
+msgid "Close"
+msgstr "Schließen"
+
+#: inc/admin/views/add-recipe-modal.php:27
+msgid ""
+"Choose the recipe you want to include from the list below or search for it."
+msgstr ""
+"Wählen Sie das einzubettende Rezept aus der Liste unten aus oder suchen Sie "
+"danach."
+
+#: inc/admin/views/add-recipe-modal.php:32
+#: inc/frontend/widgets/class-recipe-archive-filter.php:221
+msgid "Search"
+msgstr "Suchen"
+
+#: inc/admin/views/add-recipe-modal.php:46
+msgid "No search term specified. Showing recent items."
+msgstr "Kein Suchbegriff angegeben. Zeige die aktuellesten EInträge."
+
+#: inc/admin/views/add-recipe-modal.php:47
+msgid "Search or use up and down arrow keys to select an item."
+msgstr "Suchen oder die Pfeiltasten verwenden um einen Eintrag auszuwählen."
+
+#: inc/admin/views/add-recipe-modal.php:54
+#: inc/admin/views/add-recipe-modal.php:56
+msgid "Display options"
+msgstr "Anzeige-Optionen"
+
+#: inc/admin/views/add-recipe-modal.php:60
+msgid "Embed excerpt only"
+msgstr "Nur Auszug einbetten"
+
+#: inc/admin/views/add-recipe-modal.php:66
+msgid "Embed without description"
+msgstr "Ohne Beschreibung einbetten"
+
+#: inc/admin/views/add-recipe-modal.php:76
+msgid "Create a new recipe."
+msgstr "Erstellen Sie ein neues Rezept."
+
+#: inc/admin/views/add-recipe-modal.php:79
+msgid ""
+"(This will open a new tab and you will need to return here for including the "
+"recipe)"
+msgstr ""
+"(Dies öffnet einen neuen Tab und Sie müssen hierher zurückkehren, um das "
+"Rezept einzuschließen.)"
+
+#: inc/admin/views/add-recipe-modal.php:89
+msgid "Include Shortcut"
+msgstr "Kurcode einbinden"
+
+#: inc/common/abstracts/class-extension.php:88
+msgid "Enable"
+msgstr "Aktivieren"
+
+#: inc/common/abstracts/class-extension.php:101
+msgid "Disable"
+msgstr "Deaktivieren"
+
+#. translators: please ignore.
+#: inc/common/abstracts/class-metadata.php:156
+#, php-format
+msgid "<code>Unable to read file: %s</code>"
+msgstr "<code>Unable to read file: %s</code>"
+
+#: inc/common/tasks/class-update-ingredients-sorting.php:41
+msgid "Your recipe's ingredients list needs to be updated."
+msgstr "Die Zutatenliste Ihres Rezepts muss aktualisiert werden."
+
+#: inc/common/tasks/class-update-taxonomy-slug.php:41
+msgid "Your recipe's taxonomies need to be updated."
+msgstr "Die Taxonomien Ihres Rezepts müssen aktualisiert werden."
+
+#: inc/core/class-activator.php:36
+#, php-format
+msgid "This plugin requires a minimum PHP Version of %s."
+msgstr "Dieses Plugin benötigt eine PHP-Mindestversion von %s."
+
+#: inc/core/class-activator.php:87
+msgid "Course,Cuisine,Season,Difficulty"
+msgstr "Kurs,Küche,Jahreszeit,Schwierigkeitsgrad"
+
+#: inc/core/class-activator.php:89
+msgid "Course"
+msgstr "Kurs"
+
+#: inc/core/class-activator.php:90
+msgid "Courses"
+msgstr "Kurse"
+
+#: inc/core/class-activator.php:96
+msgid "Cuisine"
+msgstr "Küche"
+
+#: inc/core/class-activator.php:97
+msgid "Cuisines"
+msgstr "Küchen"
+
+#: inc/core/class-activator.php:103
+msgid "Season"
+msgstr "Jahreszeit"
+
+#: inc/core/class-activator.php:104
+msgid "Seasons"
+msgstr "Jahreszeiten"
+
+#: inc/core/class-activator.php:110
+msgid "Difficulty"
+msgstr "Schwierigkeit"
+
+#: inc/core/class-activator.php:111
+msgid "Difficulties"
+msgstr "Schwierigkeiten"
+
+#: inc/core/class-activator.php:130
+msgid "Rate this recipe"
+msgstr "Bewerten Sie dieses Rezept"
+
+#: inc/core/class-activator.php:146
+msgid "Print this Recipe"
+msgstr "Drucken Sie dieses Rezept aus"
+
+#: inc/core/class-activator.php:149
+msgid "Read More"
+msgstr "Weiterlesen"
+
+#: inc/core/class-background-tasks.php:128
+msgid "Update Recipes"
+msgstr "Rezepte aktualisieren"
+
+#: inc/core/class-extensions.php:126
+msgid "Extensions"
+msgstr "Erweiterungen"
+
+#: inc/core/class-extensions.php:151
+msgid ""
+"All Recipepress extensions. Choose which you want to use, then activate it."
+msgstr ""
+"Alle Recipepress-Erweiterungen. Wählen Sie aus, welche Sie verwenden "
+"möchten, und aktivieren Sie sie dann."
+
+#: inc/core/class-extensions.php:156
+msgid "No extensions are installed or activated."
+msgstr "Es wurden keine Erweiterungen installiert oder aktiviert."
+
+#: inc/core/class-extensions.php:236
+msgid "Activate"
+msgstr "Aktivieren"
+
+#: inc/core/class-extensions.php:237
+msgid "Deactivate"
+msgstr "Deaktivieren"
+
+#: inc/core/class-extensions.php:258 inc/core/class-extensions.php:306
+msgid "Something went wrong!"
+msgstr "Etwas hat nicht funktioniert!"
+
+#: inc/core/class-extensions.php:263
+msgid "No extension data was sent"
+msgstr "Es wurden keine Erweiterungsdaten gesendet"
+
+#: inc/core/class-extensions.php:284
+msgid "Activated"
+msgstr "Aktiviert"
+
+#: inc/core/class-extensions.php:288
+msgid "Already activated"
+msgstr "Bereits aktiviert"
+
+#: inc/core/class-extensions.php:291
+msgid "Nothing happened"
+msgstr "Es ist nichts geschehen"
+
+#: inc/core/class-extensions.php:311
+msgid "No extension data sent"
+msgstr "Keine Erweiterungsdaten gesendet"
+
+#: inc/core/class-extensions.php:326
+msgid "Deactivated"
+msgstr "Deaktiviert"
+
+#: inc/core/class-extensions.php:329
+msgid "Not activated"
+msgstr "Nicht aktiviert"
+
+#: inc/core/class-schedules.php:72
+msgid "Once Weekly"
+msgstr "Einmal wöchentlich"
+
+#: inc/core/class-shortcodes.php:163 inc/core/class-shortcodes.php:164
+msgid "Add Recipe"
+msgstr "Rezept hinzufügen"
+
+#: inc/core/class-shortcodes.php:224
+#: inc/frontend/shortcodes/class-recipe-collection.php:217
+#: inc/frontend/shortcodes/class-recipe-list.php:193
+msgid "No title"
+msgstr "Kein Titel"
+
+#: inc/extensions/rpr-author-box/includes/author-box.php:28
+#, fuzzy
+#| msgid "Recipe Author Profile"
+msgid "Recipe author's Gravatar image"
+msgstr "Rezept Autorenprofil"
+
+#: inc/extensions/rpr-author-box/includes/author-box.php:90
+msgid "View all"
+msgstr "Alle anzeigen"
+
+#: inc/extensions/rpr-author-box/includes/settings-page.php:27
+#: inc/extensions/rpr-recipe-carousel/includes/settings-page.php:27
+msgid "Author box title"
+msgstr "Autor Boxentitel"
+
+#: inc/extensions/rpr-author-box/includes/settings-page.php:47
+#: inc/extensions/rpr-favorites/includes/settings-page.php:39
+#: inc/extensions/rpr-recipe-carousel/includes/settings-page.php:47
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:34
+msgid "Facebook"
+msgstr "Facebook"
+
+#: inc/extensions/rpr-author-box/includes/settings-page.php:63
+#: inc/extensions/rpr-favorites/includes/settings-page.php:55
+#: inc/extensions/rpr-recipe-carousel/includes/settings-page.php:63
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:52
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc/extensions/rpr-author-box/includes/settings-page.php:79
+#: inc/extensions/rpr-favorites/includes/settings-page.php:71
+#: inc/extensions/rpr-recipe-carousel/includes/settings-page.php:79
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:86
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: inc/extensions/rpr-author-box/includes/settings-page.php:95
+#: inc/extensions/rpr-favorites/includes/settings-page.php:87
+#: inc/extensions/rpr-recipe-carousel/includes/settings-page.php:95
+msgid "Instagram"
+msgstr "Instagram"
+
+#: inc/extensions/rpr-author-box/includes/settings-page.php:112
+#: inc/extensions/rpr-favorites/includes/settings-page.php:104
+#: inc/extensions/rpr-recipe-carousel/includes/settings-page.php:112
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:256
+msgid "Yummly"
+msgstr "Yummly"
+
+#: inc/extensions/rpr-author-box/includes/settings-page.php:128
+#: inc/extensions/rpr-favorites/includes/settings-page.php:120
+#: inc/extensions/rpr-recipe-carousel/includes/settings-page.php:128
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: inc/extensions/rpr-author-box/rpr-author-box.php:36
+msgid "Author Box"
+msgstr "Autorenbox"
+
+#: inc/extensions/rpr-author-box/rpr-author-box.php:37
+#: inc/extensions/rpr-recipe-carousel/rpr-recipe-carousel.php:37
+msgid "A simple, lightweight author box that is displayed below recipes"
+msgstr ""
+"Eine einfache, leichte Autorenbox, die unter den Rezepten angezeigt wird"
+
+#: inc/extensions/rpr-call-to-action/includes/settings-page.php:28
+msgid "CTA Title"
+msgstr "CTA Titel"
+
+#: inc/extensions/rpr-call-to-action/includes/settings-page.php:43
+msgid "CTA Text"
+msgstr "CTA Text"
+
+#: inc/extensions/rpr-call-to-action/includes/settings-page.php:63
+msgid "CTA Position"
+msgstr "CTA-Position"
+
+#: inc/extensions/rpr-call-to-action/includes/settings-page.php:74
+msgid "Below Description"
+msgstr "Unten Beschreibung"
+
+#: inc/extensions/rpr-call-to-action/includes/settings-page.php:85
+msgid "Below Recipe"
+msgstr "Unter Rezept"
+
+#: inc/extensions/rpr-call-to-action/includes/settings-page.php:96
+#: inc/extensions/rpr-social-media-sharing/includes/settings-page.php:82
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: inc/extensions/rpr-call-to-action/includes/settings-page.php:108
+msgid "None"
+msgstr "Keine"
+
+#: inc/extensions/rpr-call-to-action/includes/settings-page.php:114
+msgid "CTA Colors"
+msgstr "CTA-Farben"
+
+#: inc/extensions/rpr-call-to-action/includes/settings-page.php:122
+msgid "Background"
+msgstr "Hintergrund"
+
+#: inc/extensions/rpr-call-to-action/includes/settings-page.php:130
+msgid "Border"
+msgstr "Rahmen"
+
+#: inc/extensions/rpr-call-to-action/includes/settings-page.php:138
+msgid "Text"
+msgstr "Text"
+
+#: inc/extensions/rpr-call-to-action/rpr-call-to-action.php:30
+msgid "Call to Action"
+msgstr "Call to Action"
+
+#: inc/extensions/rpr-call-to-action/rpr-call-to-action.php:31
+msgid "A simple Call to Action box that is added to your recipes. "
+msgstr ""
+"Ein einfaches Call-to-Action-Feld, das Ihren Rezepten hinzugefügt wird."
+
+#: inc/extensions/rpr-duplicate-recipe/rpr-duplicate-recipe.php:30
+msgid "Duplicate Recipes"
+msgstr "Rezept duplizieren"
+
+#: inc/extensions/rpr-duplicate-recipe/rpr-duplicate-recipe.php:31
+#, fuzzy
+#| msgid ""
+#| "A little time saver utility to quickly duplicate an existing recipe to a "
+#| "new draft recipe. Add a new \"Duplicate\" post action"
+msgid ""
+"A little time saver utility to quickly duplicate an existing recipe to a new "
+"draft. Adds a new \"Duplicate\" post action to WP admin recipes table."
+msgstr ""
+"Ein wenig Zeitersparnis, um ein vorhandenes Rezept schnell in ein neues "
+"Rezeptrezept zu duplizieren. Fügen Sie eine neue Post-Aktion \"Duplizieren\" "
+"hinzu"
+
+#: inc/extensions/rpr-duplicate-recipe/rpr-duplicate-recipe.php:160
+msgid "Duplicate this recipe"
+msgstr "Dupliziere dieses Rezept"
+
+#: inc/extensions/rpr-duplicate-recipe/rpr-duplicate-recipe.php:161
+msgid "Duplicate"
+msgstr "Duplizieren"
+
+#: inc/extensions/rpr-favorites/includes/settings-page.php:27
+msgid "Favorites page URL"
+msgstr "URL der Favoriten-Seite"
+
+#: inc/extensions/rpr-favorites/rpr-favorites.php:36
+msgid "Favorite Recipes"
+msgstr "Lieblingsrezepte"
+
+#: inc/extensions/rpr-favorites/rpr-favorites.php:37
+msgid ""
+"A user favorite recipes cataloging feature, where visitor can save and view "
+"their favorite recipes"
+msgstr ""
+"Eine Funktion zur Katalogisierung von Lieblingsrezepten für Benutzer, mit "
+"der Besucher ihre Lieblingsrezepte speichern und anzeigen können"
+
+#: inc/extensions/rpr-recipe-carousel/rpr-recipe-carousel.php:36
+msgid "Recipe Carousel"
+msgstr "Rezeptkarussell"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:18
+msgid "Share"
+msgstr "Teilen"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:29
+msgid "Share on Facebook"
+msgstr "Auf Facebook teilen"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:48
+msgid "Share on Twitter"
+msgstr ""
+"Auf Twitter \n"
+"teilen"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:67
+msgid "Google+"
+msgstr "Google+"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:82
+msgid "Share on Pinterest"
+msgstr "Teilen auf Pinterest"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:98
+msgid "Share on Mix"
+msgstr "Auf Mix teilen"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:102
+msgid "Mix"
+msgstr "Gemischt"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:116
+msgid "Share on Tumblr"
+msgstr "auf Tumblr teilen"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:120
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:133
+msgid "Share on Reddit"
+msgstr "Auf Reddit teilen"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:137
+msgid "Reddit"
+msgstr "Reddit"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:149
+msgid "Save to Pocket"
+msgstr "In der Pocket speichern"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:153
+msgid "Pocket"
+msgstr "Pocket"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:165
+msgid "Share on Digg"
+msgstr "Auf Digg teilen"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:169
+msgid "Digg"
+msgstr "Digg"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:183
+msgid "Share on Instapaper"
+msgstr "Auf Instapaper teilen"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:187
+msgid "InstaPaper"
+msgstr "InstaPaper"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:200
+msgid "Share on Buffer"
+msgstr "Auf Buffer teilen"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:204
+msgid "Buffer"
+msgstr "Buffer"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:216
+msgid "Get the Full Recipe Here"
+msgstr "Das vollständige Rezept erhalten Sie hier"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:218
+msgid "Email this recipe"
+msgstr "E-Mail dieses Rezept"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:222
+msgid "Email"
+msgstr "E-Mail"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:233
+#: inc/frontend/class-template.php:194
+msgid "Print this recipe"
+msgstr "Drucken Sie dieses Rezept aus"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:237
+msgid "Print"
+msgstr "Drucken"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:252
+msgid "Share on Yummly"
+msgstr "Teilen Sie auf Yummly"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:270
+msgid "Share on Flipboard"
+msgstr "Auf Flipboard teilen"
+
+#: inc/extensions/rpr-social-media-sharing/includes/all-buttons.php:274
+msgid "Flipboard"
+msgstr "Flipboard"
+
+#: inc/extensions/rpr-social-media-sharing/includes/settings-page.php:17
+msgid "Share title"
+msgstr "Teilen Titel"
+
+#: inc/extensions/rpr-social-media-sharing/includes/settings-page.php:28
+msgid "Social media sites"
+msgstr "Social-Media-Websites"
+
+#: inc/extensions/rpr-social-media-sharing/includes/settings-page.php:39
+msgid "Buttons position"
+msgstr "Button Position"
+
+#: inc/extensions/rpr-social-media-sharing/includes/settings-page.php:49
+msgid "Top"
+msgstr "Oben"
+
+#: inc/extensions/rpr-social-media-sharing/includes/settings-page.php:60
+msgid "Bottom"
+msgstr "Unten"
+
+#: inc/extensions/rpr-social-media-sharing/includes/settings-page.php:71
+msgid "Both"
+msgstr "Beide"
+
+#: inc/extensions/rpr-social-media-sharing/includes/settings-page.php:89
+msgid "Buttons color"
+msgstr "Schaltflächen"
+
+#: inc/extensions/rpr-social-media-sharing/includes/settings-page.php:100
+msgid "Twitter username"
+msgstr "Twitter-Nutzername"
+
+#: inc/extensions/rpr-social-media-sharing/includes/settings-page.php:111
+msgid "Display on home page"
+msgstr "Auf der Homepage anzeigen"
+
+#: inc/extensions/rpr-social-media-sharing/rpr-social-media-sharing.php:32
+msgid "Social Media Sharing"
+msgstr "Teilen in Social Media"
+
+#: inc/extensions/rpr-social-media-sharing/rpr-social-media-sharing.php:33
+msgid ""
+"Simple, lightweight social sharing buttons for your recipes. Just select the "
+"platform you'd like to share to, where the buttons should show up \tand save "
+"your settings."
+msgstr ""
+"Einfache, leichte Social-Sharing-Schaltflächen für Ihre Rezepte. Wählen Sie "
+"einfach die Plattform aus, auf der Sie freigeben möchten, auf der die "
+"Schaltflächen angezeigt werden sollen, und speichern Sie Ihre Einstellungen."
+
+#. translators: '3 from 4 reviews'. The average review of a recipe.
+#. TODO: "title" should not be translated, it's an HTML attribute.
+#: inc/frontend/class-rating.php:333
+#, php-format
+msgid " title=\"%1$s from %2$s reviews\""
+msgstr "title = \"%1$s aus %2$s Bewertungen\""
+
+#: inc/frontend/class-rating.php:427
+msgid "Recipe rating"
+msgstr "Rezeptbewertung"
+
+#: inc/frontend/class-rating.php:498 inc/frontend/class-rating.php:541
+msgid "Rating"
+msgstr "Bewertung"
+
+#. translators: "2 from 75 ratings".
+#: inc/frontend/class-rating.php:565
+#, php-format
+msgid "%1$s from %2$s ratings"
+msgstr "%1$s aus %2$s Bewertungen"
+
+#: inc/frontend/class-template.php:188
+msgid "Print Recipe"
+msgstr "Rezept Drucken"
+
+#: inc/frontend/class-template.php:608
+msgid "No ingredients could be found for this recipe."
+msgstr "Für dieses Rezept konnten keine Zutaten gefunden werden."
+
+#: inc/frontend/class-template.php:702
+#, php-format
+msgid ""
+"<li>The <em>%1$s</em> ingredient no longer exists. Try re-saving this recipe."
+"</li>"
+msgstr ""
+"<li> Die <em>%1$s</em> Zutat existiert nicht mehr. Versuchen Sie, dieses "
+"Rezept erneut zu speichern. </li>"
+
+#: inc/frontend/class-template.php:867
+msgid "No instructions could be found for this recipe."
+msgstr "Für dieses Rezepte konnte keine Zubereitung gefunden werden."
+
+#: inc/frontend/class-template.php:1086
+msgid "Source"
+msgstr "Quelle"
+
+#: inc/frontend/class-template.php:1157
+msgid "Energy"
+msgstr "Energie"
+
+#: inc/frontend/class-template.php:1207
+msgid "Per 100g"
+msgstr "Pro 100g"
+
+#: inc/frontend/class-template.php:1210
+msgid "Per portion"
+msgstr "pro Portion"
+
+#: inc/frontend/class-template.php:1213
+msgid "Per recipe"
+msgstr "Für das ganze Rezept"
+
+#: inc/frontend/class-template.php:1216
+msgid "Per serving"
+msgstr "pro Portion"
+
+#: inc/frontend/class-template.php:1280
+msgid "For"
+msgstr "Für"
+
+#: inc/frontend/class-template.php:1351
+msgid "Preparation"
+msgstr "Zubereitung"
+
+#: inc/frontend/class-template.php:1363
+msgid "Cooking"
+msgstr "Kochen"
+
+#: inc/frontend/class-template.php:1375
+msgid "Ready in"
+msgstr "Fertig in"
+
+#: inc/frontend/class-template.php:2034
+msgid "Page"
+msgstr "Seite"
+
+#: inc/frontend/shortcodes/class-index.php:168
+msgid "There are no recipes to display."
+msgstr "Es können keine Rezepte angezeigt werden."
+
+#: inc/frontend/shortcodes/class-ingredients.php:156
+msgid "There are no ingredients to display."
+msgstr "Es sind keine Zutaten anzuzeigen."
+
+#: inc/frontend/shortcodes/class-recipe-collection.php:155
+#: inc/frontend/shortcodes/class-recipe-collection.php:156
+msgid "Add Collection"
+msgstr "Sammlung hinzufügen"
+
+#: inc/frontend/shortcodes/class-recipe-list.php:131
+#: inc/frontend/shortcodes/class-recipe-list.php:132
+msgid "Add Recipe List"
+msgstr "Rezeptliste hinzufügen"
+
+#. translators: please ignore.
+#: inc/frontend/shortcodes/class-taxonomy-list.php:124
+#, php-format
+msgid "View more %s recipes"
+msgstr "Mehr %s Rezepte anzeigen"
+
+#. translators:please ignore.
+#: inc/frontend/shortcodes/class-taxonomy-list.php:175
+#, php-format
+msgid "There are no recipes to display for the \"%s\" taxonomy."
+msgstr "Es gibt keine Rezepte für die Taxonomie \" %s\"."
+
+#: inc/frontend/templates/rpr_2column/recipe.php:138
+#: inc/frontend/templates/rpr_healthy/recipe.php:60
+msgid "Nutrition"
+msgstr "Nährwerte"
+
+#: inc/frontend/templates/rpr_2column/recipe.php:149
+msgid "Time"
+msgstr "Zeit"
+
+#: inc/frontend/templates/rpr_2column/recipe.php:160
+msgid "Servings"
+msgstr "Portionen"
+
+#: inc/frontend/templates/rpr_default/functions.php:110
+#: inc/frontend/templates/rpr_delicious/functions.php:109
+msgid "Recipe Template"
+msgstr "Rezeptvorlage"
+
+#: inc/frontend/templates/rpr_default/functions.php:146
+msgid "Accent Color"
+msgstr "Akzentfarbe"
+
+#: inc/frontend/templates/rpr_default/functions.php:158
+msgid "Jump to Recipe button"
+msgstr "Zur Rezeptschaltfläche springen"
+
+#: inc/frontend/templates/rpr_default/functions.php:170
+msgid "Print Recipe button"
+msgstr "Rezepttaste drucken"
+
+#: inc/frontend/templates/rpr_delicious/functions.php:151
+#: inc/frontend/templates/rpr_delicious/recipe.php:171
+msgid "Did You Make This Recipe?"
+msgstr "Hast du dieses Rezept gemacht?"
+
+#: inc/frontend/templates/rpr_delicious/functions.php:160
+#: inc/frontend/templates/rpr_delicious/recipe.php:177
+msgid "Tag us on Instagram with a photo your recipe and how it turned out"
+msgstr ""
+"Kennzeichnen Sie uns auf Instagram mit einem Foto Ihres Rezepts und wie es "
+"sich herausstellte"
+
+#: inc/frontend/templates/rpr_delicious/functions.php:173
+msgid "Accent Color 1"
+msgstr "Akzentfarbe 1"
+
+#: inc/frontend/templates/rpr_delicious/functions.php:184
+msgid "Accent Color 2"
+msgstr "Akzentfarbe 2"
+
+#: inc/frontend/templates/rpr_delicious/functions.php:196
+msgid "Display excerpt"
+msgstr "Auszug anzeigen"
+
+#: inc/frontend/templates/rpr_delicious/functions.php:208
+msgid "Share message"
+msgstr "Nachricht teilen"
+
+#: inc/frontend/templates/rpr_delicious/functions.php:220
+msgid "Heading"
+msgstr "Überschrift"
+
+#: inc/frontend/templates/rpr_delicious/functions.php:232
+msgid "Message"
+msgstr "Nachricht"
+
+#: inc/frontend/templates/rpr_delicious/recipe.php:151
+msgid "Nutritional Information"
+msgstr "Nährwert-Information"
+
+#: inc/frontend/templates/rpr_healthy/recipe.php:49
+msgid "Categories"
+msgstr "Kategorien"
+
+#: inc/frontend/templates/rpr_healthy/recipe.php:70
+msgid "Cooking Time"
+msgstr "Kochzeit"
+
+#: inc/frontend/widgets/class-recipe-archive-filter.php:47
+msgid "RPR Archive Filter"
+msgstr "RPR-Archivfilter"
+
+#: inc/frontend/widgets/class-recipe-archive-filter.php:65
+msgid ""
+"Add a widget the the recipe archive page to allow the filtering of results"
+msgstr ""
+"Fügen Sie der Rezeptarchivseite ein Widget hinzu, um die Ergebnisse filtern "
+"zu können"
+
+#: inc/frontend/widgets/class-recipe-archive-filter.php:222
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+#: inc/frontend/widgets/class-recipe-archive-filter.php:267
+msgid "Filter Recipes"
+msgstr "Rezepte filtern"
+
+#: inc/frontend/widgets/class-recipe-archive-filter.php:280
+#: inc/frontend/widgets/class-recipe-calendar.php:141
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:247
+msgid "Title"
+msgstr "Titel"
+
+#: inc/frontend/widgets/class-recipe-archive-filter.php:307
+msgid "Show recipe count"
+msgstr "Rezeptanzahl anzeigen"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:39
+msgid "RPR Author Profile"
+msgstr "RPR-Autorenprofil"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:55
+msgid "Add a widget to display the blog's author profile information"
+msgstr ""
+"Fügen Sie ein Widget hinzu, um die Autorenprofilinformationen des Blogs "
+"anzuzeigen"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:260
+msgid "Widget Title"
+msgstr "Widget Titel"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:266
+msgid "Profile Image"
+msgstr "Profilbild"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:272
+msgid "Profile Link"
+msgstr "Profil-Link"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:278
+msgid "Profile Description"
+msgstr "Profilbeschreibung"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:284
+msgid "Facebook Profile Link"
+msgstr "Facebook-Profil"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:296
+msgid "Twitter Profile Link"
+msgstr "Twitter-Profillink"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:308
+msgid "Yummly Profile Link"
+msgstr "Yummly-Profillink"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:320
+msgid "Pinterest Profile Link"
+msgstr "Twitter-Profillink"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:332
+msgid "YouTube Profile Link"
+msgstr "YouTube-Profillink"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:344
+msgid "Instagram Profile Link"
+msgstr "Instagram-Profillink"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:356
+msgid "Icon Size"
+msgstr "Icon Größe"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:364
+msgid "Hide widget header"
+msgstr "Widget-Header ausblenden"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:401
+msgid "Read more of my story"
+msgstr "Lesen Sie mehr von meiner Geschichte"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:403
+msgid "Profile picture"
+msgstr "Profilbild"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:409
+msgid "Read more"
+msgstr "Weiterlesen"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:414
+msgid "Follow me on Facebook"
+msgstr "Folge mir auf Facebook"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:421
+msgid "Follow me on Twitter"
+msgstr "Folge mir auf Twitter"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:428
+msgid "Follow me on Instagram"
+msgstr "Folge mir auf Instagram"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:435
+msgid "Follow me on Pinterest"
+msgstr "Folgen Sie mir auf Pinterest"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:442
+msgid "Follow me on Yummly"
+msgstr "Folge mir auf Yummly"
+
+#: inc/frontend/widgets/class-recipe-author-profile.php:449
+msgid "Follow me on YouTube"
+msgstr "Folge mir auf YouTube"
+
+#: inc/frontend/widgets/class-recipe-calendar.php:38
+msgid "RPR Recipe Calendar"
+msgstr "RPR-Rezeptkalender"
+
+#: inc/frontend/widgets/class-recipe-calendar.php:56
+msgid "A widget displaying a calendar of recipe posts"
+msgstr "Ein Widget, das einen Kalender mit Rezeptbeiträgen anzeigt"
+
+#: inc/frontend/widgets/class-recipe-calendar.php:152
+msgid "Show regular posts?"
+msgstr "Regelmäßige Beiträge anzeigen?"
+
+#. translators: Calendar caption: 1: month name, 2: 4-digit year
+#: inc/frontend/widgets/class-recipe-calendar.php:281
+#, php-format
+msgctxt "calendar caption"
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
+
+#: inc/frontend/widgets/class-recipe-calendar.php:323
+#: inc/frontend/widgets/class-recipe-calendar.php:331
+#, php-format
+msgid "View reviews for %1$s %2$s"
+msgstr "Buchbesprechungen anzeigen für %1$s %2$s"
+
+#: inc/frontend/widgets/class-recipe-recent-ratings.php:40
+msgid "RPR Recent Ratings"
+msgstr "RPR Aktuelle Bewertungen"
+
+#: inc/frontend/widgets/class-recipe-recent-ratings.php:56
+msgid "Displays the contents of recent reviews leaved on a recipe"
+msgstr "Zeigt den Inhalt der letzten Bewertungen eines Rezepts an"
+
+#: inc/frontend/widgets/class-recipe-recent-ratings.php:131
+#, php-format
+msgid "%s out of 5 stars"
+msgstr "%s von 5 Sternen"
+
+#: inc/frontend/widgets/class-recipe-recent-ratings.php:144
+msgid "No recipe ratings found"
+msgstr "Keine Rezeptbewertungen gefunden"
+
+#: inc/frontend/widgets/class-recipe-recent-ratings.php:209
+#: inc/frontend/widgets/class-recipe-recent.php:188
+#: inc/frontend/widgets/class-recipe-taxonomy-list.php:205
+msgid "Title (optional)"
+msgstr "Titel (optional)"
+
+#: inc/frontend/widgets/class-recipe-recent-ratings.php:216
+msgid "Number of ratings"
+msgstr "Anzahl der Bewertungen"
+
+#: inc/frontend/widgets/class-recipe-recent-ratings.php:225
+msgid "Minimum rating"
+msgstr "Mindestbewertung"
+
+#: inc/frontend/widgets/class-recipe-recent-ratings.php:234
+msgid "Word count"
+msgstr "Wortzahl"
+
+#: inc/frontend/widgets/class-recipe-recent.php:39
+msgid "RPR Recent Recipes"
+msgstr "RPR Neueste Rezepte"
+
+#: inc/frontend/widgets/class-recipe-recent.php:50
+msgid "A widget to display the most recent recipes."
+msgstr "Ein Widget zum Anzeigen der neuesten Rezepte."
+
+#: inc/frontend/widgets/class-recipe-recent.php:196
+#, fuzzy
+#| msgid "Number of ratings"
+msgid "Number of Recipes"
+msgstr "Anzahl der Bewertungen"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:35
+#, fuzzy
+#| msgid "Tag Cloud"
+msgid "RPR Tag Cloud"
+msgstr "Tag-Wolke"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:51
+msgid ""
+"An advanced widget that gives you total control over the output of your tags."
+msgstr ""
+"Ein erweitertes Widget, mit dem Sie die Ausgabe Ihrer Tags vollständig "
+"steuern können."
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:184
+msgid "Tag Cloud"
+msgstr "Tag-Wolke"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:220
+msgid "Flat"
+msgstr "Flach"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:221
+msgid "List"
+msgstr "Liste"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:225
+msgid "Ascending"
+msgstr "Aufsteigend"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:226
+msgid "Descending"
+msgstr "Absteigend"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:227
+msgid "Random"
+msgstr "Zufällig"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:231
+#: inc/frontend/widgets/class-recipe-taxonomy-list.php:241
+msgid "Count"
+msgstr "Anzahl"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:232
+#: inc/frontend/widgets/class-recipe-taxonomy-list.php:238
+msgid "Name"
+msgstr "Name"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:255
+msgid "Taxonomy"
+msgstr "Taxonomie"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:266
+msgid "Format"
+msgstr "Format"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:277
+msgid "Order"
+msgstr "Bestellung"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:288
+msgid "Order by"
+msgstr "Sortieren nach"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:310
+msgid "Number"
+msgstr "Nummer"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:318
+msgid "Largest"
+msgstr "Größter"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:326
+msgid "Smallest"
+msgstr "Kleinste"
+
+#: inc/frontend/widgets/class-recipe-tag-cloud.php:345
+msgid "Separator"
+msgstr "Separator"
+
+#: inc/frontend/widgets/class-recipe-taxonomy-list.php:36
+msgid "RPR Taxonomy List"
+msgstr "RPR-Taxonomieliste"
+
+#: inc/frontend/widgets/class-recipe-taxonomy-list.php:52
+msgid ""
+"An advanced widget that gives you total control over the output of your "
+"recipe taxonomies."
+msgstr ""
+"Ein erweitertes Widget, mit dem Sie die Ausgabe Ihrer Rezepttaxonomien "
+"vollständig steuern können."
+
+#: inc/frontend/widgets/class-recipe-taxonomy-list.php:128
+msgid "No terms found"
+msgstr "Keine Terme gefunden"
+
+#: inc/frontend/widgets/class-recipe-taxonomy-list.php:213
+msgid "Taxonomy to display"
+msgstr "Anzuzeigende Taxonomie"
+
+#: inc/frontend/widgets/class-recipe-taxonomy-list.php:224
+msgid "Displayed taxonomy count"
+msgstr "Angezeigte Taxonomiezahl"
+
+#: inc/frontend/widgets/class-recipe-taxonomy-list.php:233
+msgid "Order items by"
+msgstr "Einträge ordnen nach"
+
+#: inc/frontend/widgets/class-recipe-taxonomy-list.php:261
+msgid "Show count with"
+msgstr "Zeige Anzahl mit"
+
+#: inc/frontend/widgets/class-recipe-taxonomy-list.php:267
+msgid "before and"
+msgstr "davor und"
+
+#: inc/frontend/widgets/class-recipe-taxonomy-list.php:273
+msgid "behind"
+msgstr "danach"
+
+#: inc/frontend/widgets/class-recipe-taxonomy-list.php:280
+msgid "Hide empty terms?"
+msgstr "Leere Begriffe verstecken?"
+
+#: inc/libraries/wp-background-processing/class-wp-background-process.php:448
+#, php-format
+msgid "Every %d Minutes"
+msgstr "Alle %d Minuten"
+
+#. Plugin Name of the plugin/theme
+msgid "Recipepress Reloaded"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wzymedia.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"The swiss army knife for your food blog. A tool to add nicely formatted "
+"recipes that are SEO friendly to your blog and to manage your recipe "
+"collection."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "wzy Media"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wzymedia.com/"
+msgstr ""
+
+#~ msgid "Review content"
+#~ msgstr "Überprüfen Sie den Inhalt"
+
+#~ msgid "Review excerpt"
+#~ msgstr "Überprüfen Sie den Auszug"
+
+#, fuzzy
+#~| msgid "Show recipe count"
+#~ msgid "Character count"
+#~ msgstr "Rezeptanzahl anzeigen"
+
+#, fuzzy
+#~| msgid "Show regular posts?"
+#~ msgid "Show regular posts"
+#~ msgstr "Regelmäßige Beiträge anzeigen?"
+
+#, fuzzy
+#~| msgid "Display options"
+#~ msgid "Display text"
+#~ msgstr "Anzeige-Optionen"
+
+#~ msgid "Calendar"
+#~ msgstr "Kalender"
+
+#~ msgid "Insert recipe list"
+#~ msgstr "Rezeptliste einfügen"
+
+#~ msgid "Add List"
+#~ msgstr "Neue Liste"
+
+#~ msgid "Slug"
+#~ msgstr "Slug"
+
+#~ msgid "Your recipe will be accessible at "
+#~ msgstr "Ihr Rezept finden Sie unter "
+
+#~ msgid ""
+#~ "The slug is the URL part of the taxonomy name. It should only be 1 word "
+#~ "containing letters."
+#~ msgstr ""
+#~ "Der Slug ist der URL-Teil des Taxonomienamens. Es sollte nur 1 Wort sein, "
+#~ "das Buchstaben enthält."
+
+#~ msgid "Place the label here, as it should displayed in your language."
+#~ msgstr ""
+#~ "Platzieren Sie das Etikett hier so, wie es in Ihrer Sprache angezeigt "
+#~ "werden soll."
+
+#, php-format
+#~ msgid "Place the slug of the %s taxonomy here."
+#~ msgstr "Platzieren Sie hier den Butzen der %s-Taxonomie."
+
+#, php-format
+#~ msgid ""
+#~ "Place the label of the %s taxonomy here, as it should display on the "
+#~ "frontend."
+#~ msgstr ""
+#~ "Platzieren Sie hier die Bezeichnung der %s-Taxonomie, wie sie im Frontend "
+#~ "angezeigt werden soll."
+
+#~ msgid "Linked Profile Link"
+#~ msgstr "LinkedIn-Profillink"

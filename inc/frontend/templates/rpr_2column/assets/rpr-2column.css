@@ -1,0 +1,147 @@
+.rpr-recipe-container h2 {
+    margin: 0 0 1em 0;
+}
+
+.rpr-description-container {
+    margin: 0 0 3em 0;
+}
+
+.rpr-columns-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-column-gap: 1rem;
+    margin: 0 0 2em 0;
+}
+
+.rpr-columns-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+    margin: 0 0 2em 0;
+}
+
+.rpr-columns-container h2 {
+    margin: 0 0 .6em 0;
+}
+
+.rpr-columns-container h3 {
+    margin: 0 0 .3em 0;
+}
+
+.rpr-ingredients-container .rpr-servings {
+    text-align: right;
+    margin: 0 0 .5em 0;
+}
+
+.rpr-times-container,
+.rpr-nutrition-container,
+.rpr-terms-container {
+    margin: 0 0 2em 0;
+}
+
+.rpr-times-container ul.rpr-times,
+.rpr-nutrition-container ul.rpr-nutrition {
+    list-style: none !important;
+}
+
+.rpr-terms-container h2 {
+    margin: 0 0 1em 0;
+}
+
+.rpr-terms-container .rpr-term-item {
+    margin: 0 0 2em 0;
+}
+
+.rpr-instruction-list .rpr-instruction {
+    position: relative;
+    clear: right;
+    margin: 0 0 1em 0;
+    list-style-position: inside;
+}
+
+ul.rpr-ingredient-list {
+    list-style: none;
+}
+
+li.rpr-ingredient {
+    margin: 0 0 0.5em 0;
+}
+
+.rpr-instruction-wrapper.has_thumbnail.right {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.rpr-notes-container {
+    margin: 0 0 2em 0;
+}
+
+.rpr-jump-container {
+    text-align: center;
+    margin: 0 0 2em 0;
+}
+
+.rpr-servings {
+    margin: 0 0 1em 0;
+    list-style: none;
+}
+
+.rpr-servings li {
+    display: inline;
+}
+
+.rpr-print-container {
+
+}
+
+.rpr-jump-to-recipe,
+.rpr-print-recipe {
+
+}
+
+ul.rpr-equipment__list li {
+    list-style: none;
+}
+
+/* Small (x-sm) */
+@media (max-width: 320px) {
+    .rpr-columns-container,
+    .rpr-columns-container-2 {
+        grid-template-columns: 1fr;
+    }
+    ol.rpr-instruction-list {
+        margin: 0;
+    }
+    .rpr-instruction-wrapper {
+        flex-wrap: wrap;
+    }
+    .rpr-instruction-list .rpr-instruction .rpr_img_link {
+        margin: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .rpr-columns-container,
+    .rpr-columns-container-2 {
+        grid-template-columns: 1fr;
+    }
+    ol.rpr-instruction-list {
+        margin: 0;
+    }
+}
+
+/* Medium (md) */
+@media (max-width: 768px) {
+
+}
+
+/* Large (lg) */
+@media (max-width: 1024px) {
+
+}
+
+/* Extra Large (xl) */
+@media (max-width: 1280px) {
+
+}

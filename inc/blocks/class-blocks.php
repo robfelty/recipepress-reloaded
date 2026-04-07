@@ -2,6 +2,7 @@
 
 namespace Recipepress\Inc\Blocks;
 
+use Recipepress as NS;
 use Recipepress\Inc\Core\Options;
 use Recipepress\Inc\Frontend\Template;
 
@@ -45,7 +46,7 @@ class Blocks {
 		add_action( 'init',                        array( $this, 'register_block_types' ) );
 		add_action( 'init',                        array( $this, 'register_meta' ) );
 		add_action( 'enqueue_block_editor_assets', array( $this, 'enqueue_editor_assets' ) );
-		add_action( 'wp_enqueue_scripts',          array( $this, 'enqueue_frontend_assets' ), 20 );
+		add_action( 'wp_enqueue_scripts',          array( $this, 'enqueue_frontend_assets' ) );
 		add_action( 'wp_after_insert_post',        array( $this, 'sync_blocks_to_meta' ), 10, 3 );
 		add_action( 'add_meta_boxes',              array( $this, 'suppress_metaboxes_in_block_editor' ), 999 );
 		add_action( 'rest_api_init',               array( $this, 'register_rest_routes' ) );
@@ -400,23 +401,37 @@ class Blocks {
 	 * For classic recipes this is done inside recipe.php; for block recipes we must
 	 * enqueue it here because recipe.php is never loaded.
 	 */
+	/**
+	 * Enqueue the active recipe template's stylesheet for all recipe pages.
+	 *
+	 * The template's recipe.php calls wp_enqueue_style() inside the_content filter,
+	 * which fires after wp_head() — so those calls are no-ops for classic themes.
+	 * Enqueueing here (priority 20, after the style is registered at priority 10)
+	 * ensures the <link> tag appears in <head> for both classic and block recipes.
+	 */
 	public function enqueue_frontend_assets() {
 		if ( ! is_singular( 'rpr_recipe' ) ) {
 			return;
 		}
 
-		// get_queried_object_id() is reliable during wp_enqueue_scripts (before loop).
-		$post_id = get_queried_object_id();
-		if ( ! $post_id || ! self::post_uses_recipe_blocks( $post_id ) ) {
-			return;
+		$template = Options::get_option( 'rpr_recipe_template', 'rpr_default' );
+		if ( ! $template ) {
+			$template = 'rpr_default';
 		}
 
-		// The active template's functions.php has already *registered* the style
-		// (it runs on wp_loaded → include_functions_file → wp_enqueue_scripts).
-		// Derive the handle from the template option: e.g. "rpr_default" → "rpr-default-template-style".
-		$template = Options::get_option( 'rpr_recipe_template', 'rpr_default' );
-		$handle   = str_replace( '_', '-', $template ) . '-template-style';
-		wp_enqueue_style( $handle );
+		$css_name = str_replace( '_', '-', $template ); // e.g. rpr_default → rpr-default
+		$handle   = $css_name . '-template-style';
+		$css_path = NS\PLUGIN_DIR . "inc/frontend/templates/{$template}/assets/{$css_name}.css";
+		$css_url  = NS\PLUGIN_URL . "inc/frontend/templates/{$template}/assets/{$css_name}.css";
+
+		// Fall back to rpr_default if the configured template CSS doesn't exist.
+		if ( ! file_exists( $css_path ) ) {
+			$css_path = NS\PLUGIN_DIR . 'inc/frontend/templates/rpr_default/assets/rpr-default.css';
+			$css_url  = NS\PLUGIN_URL . 'inc/frontend/templates/rpr_default/assets/rpr-default.css';
+			$handle   = 'rpr-default-template-style';
+		}
+
+		wp_enqueue_style( $handle, $css_url, array(), $this->version );
 	}
 
 	public function enqueue_editor_assets() {

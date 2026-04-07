@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "rpr/recipe-notes",
+  "version": "1.0.0",
+  "title": "Recipe Notes",
+  "category": "recipepress",
+  "description": "Additional notes for the recipe.",
+  "keywords": [
+    "recipe",
+    "notes",
+    "tips"
+  ],
+  "textdomain": "recipepress-reloaded",
+  "supports": {
+    "html": false,
+    "reusable": false,
+    "multiple": false,
+    "lock": false
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "rpr/ingredient-group",
+  "version": "1.0.0",
+  "title": "Ingredient Group",
+  "category": "recipepress",
+  "description": "A group heading within an ingredients list.",
+  "parent": [
+    "rpr/ingredients"
+  ],
+  "keywords": [
+    "recipe",
+    "ingredient",
+    "group",
+    "section"
+  ],
+  "textdomain": "recipepress-reloaded",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "blockKey": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "reusable": false,
+    "lock": false
+  }
+}

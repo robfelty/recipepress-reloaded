@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "rpr/instructions",
+  "version": "1.0.0",
+  "title": "Instructions",
+  "category": "recipepress",
+  "description": "Step-by-step recipe instructions.",
+  "keywords": [
+    "recipe",
+    "instructions",
+    "steps",
+    "directions"
+  ],
+  "textdomain": "recipepress-reloaded",
+  "supports": {
+    "html": false,
+    "reusable": false,
+    "multiple": false,
+    "lock": false
+  }
+}

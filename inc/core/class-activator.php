@@ -135,7 +135,7 @@ class Activator {
 		// Appearance tab.
 		$defaults['rpr_recipe_template']                = 'rpr_default';
 		$defaults['rpr_recipe_template_click_img']      = '';
-		$defaults['rpr_recipe_template_inst_image']     = 'below';
+		$defaults['rpr_recipe_template_inst_image']     = 'right';
 		$defaults['rpr_recipe_template_use_icons']      = '';
 		$defaults['rpr_recipe_template_print_area']     = '#rpr-recipe';
 		$defaults['rpr_recipe_template_no_print_area']  = '.no-print';

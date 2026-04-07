@@ -1,0 +1,56 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "rpr/ingredient",
+  "version": "1.0.0",
+  "title": "Ingredient",
+  "category": "recipepress",
+  "description": "A single recipe ingredient.",
+  "parent": [
+    "rpr/ingredients"
+  ],
+  "keywords": [
+    "recipe",
+    "ingredient"
+  ],
+  "textdomain": "recipepress-reloaded",
+  "attributes": {
+    "amount": {
+      "type": "string",
+      "default": ""
+    },
+    "unit": {
+      "type": "string",
+      "default": ""
+    },
+    "ingredient": {
+      "type": "string",
+      "default": ""
+    },
+    "ingredientId": {
+      "type": "integer",
+      "default": 0
+    },
+    "notes": {
+      "type": "string",
+      "default": ""
+    },
+    "link": {
+      "type": "string",
+      "default": ""
+    },
+    "target": {
+      "type": "string",
+      "default": "same"
+    },
+    "blockKey": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "reusable": false,
+    "lock": false
+  }
+}

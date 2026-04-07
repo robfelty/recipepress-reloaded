@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "rpr/recipe-info",
+  "version": "1.0.0",
+  "title": "Recipe Info",
+  "category": "recipepress",
+  "description": "Recipe timings and servings.",
+  "keywords": [
+    "recipe",
+    "time",
+    "servings"
+  ],
+  "textdomain": "recipepress-reloaded",
+  "supports": {
+    "html": false,
+    "reusable": false,
+    "multiple": false,
+    "lock": false
+  }
+}

@@ -10,6 +10,7 @@ use Recipepress\Inc\Admin\Settings\Callbacks;
 use Recipepress\Inc\Admin\Settings\Sanitization;
 use Recipepress\Inc\Admin\Settings\Settings;
 use Recipepress\Inc\Admin\Settings\Metaboxes;
+use Recipepress\Inc\Blocks\Blocks;
 
 /**
  * The core plugin class.
@@ -83,6 +84,7 @@ class Init {
 
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
+		$this->define_block_hooks();
 
 		// $this->define_rest_hooks();
 
@@ -312,6 +314,16 @@ class Init {
 
 		// Replace the oEmbed markup for YouTube videos.
 		$this->loader->add_filter( 'embed_oembed_html', $plugin_public, 'speedup_youtube_oembed', 99, 4 );
+	}
+
+	/**
+	 * Register hooks for the Gutenberg block editor integration.
+	 *
+	 * @access    private
+	 */
+	private function define_block_hooks() {
+		$blocks = new Blocks( $this->get_plugin_name(), $this->get_version() );
+		$blocks->register_hooks();
 	}
 
 	/**

@@ -7,6 +7,7 @@ use Recipepress\Inc\Common\Abstracts\PostType;
 use Recipepress\Inc\Core\Options;
 use Recipepress\Inc\Libraries\Pluralizer\Pluralizer;
 use Recipepress\Inc\Frontend;
+use Recipepress\Inc\Blocks\Blocks;
 
 /**
  * Handles the 'recipe' custom posttype
@@ -284,20 +285,25 @@ class Recipe extends PostType {
 		// Only render specifically if we have a recipe.
 		if ( get_post_type() === $this->cpt_name ) {
 
-			// Remove the filter.
+			// Remove the filter to prevent recursion.
 			remove_filter( 'the_content', array( $this, 'get_the_post_type_content' ) );
 
 			$recipe               = get_post();
 			$GLOBALS['recipe_id'] = $recipe->ID;
-			$archive_display      = Options::get_option( 'rpr_recipes_archive', 'archive_display_full' );
 
-			if ( 'archive_display_full' === $archive_display || is_single() ) {
-				$content = $this->render_post_type_content( $recipe );
+			// Recipes converted to blocks are rendered via block render callbacks.
+			if ( Blocks::post_uses_recipe_blocks( $recipe->ID ) ) {
+				$content = do_blocks( $recipe->post_content );
 			} else {
-				$content = $this->render_post_type_excerpt( $recipe );
+				$archive_display = Options::get_option( 'rpr_recipes_archive', 'archive_display_full' );
+				if ( 'archive_display_full' === $archive_display || is_single() ) {
+					$content = $this->render_post_type_content( $recipe );
+				} else {
+					$content = $this->render_post_type_excerpt( $recipe );
+				}
 			}
 
-			// Add the filter again.
+			// Restore the filter.
 			add_filter( 'the_content', array( $this, 'get_the_post_type_content' ), 10 );
 		}
 

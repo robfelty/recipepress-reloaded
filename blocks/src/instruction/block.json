@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "rpr/instruction",
+  "version": "1.0.0",
+  "title": "Instruction",
+  "category": "recipepress",
+  "description": "A single recipe instruction step.",
+  "parent": [
+    "rpr/instructions"
+  ],
+  "keywords": [
+    "recipe",
+    "instruction",
+    "step",
+    "direction"
+  ],
+  "textdomain": "recipepress-reloaded",
+  "attributes": {
+    "description": {
+      "type": "string",
+      "default": "",
+      "source": "attribute",
+      "selector": ".rpr-instruction-description",
+      "attribute": "data-description"
+    },
+    "image": {
+      "type": "integer",
+      "default": 0
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "blockKey": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "reusable": false,
+    "lock": false
+  }
+}

@@ -3,6 +3,7 @@ import { useBlockProps, RichText, MediaUpload, MediaUploadCheck } from '@wordpre
 import { Button, Tooltip } from '@wordpress/components';
 import { useEffect } from '@wordpress/element';
 import { useSelect } from '@wordpress/data';
+import { store as coreStore } from '@wordpress/core-data';
 
 export default function InstructionEdit( { attributes, setAttributes, clientId } ) {
 	const { description, image, imageUrl, blockKey } = attributes;
@@ -24,11 +25,30 @@ export default function InstructionEdit( { attributes, setAttributes, clientId }
 		return count;
 	}, [ clientId ] );
 
+	// Resolve imageUrl from the attachment ID when it is missing (e.g. after migration).
+	const resolvedUrl = useSelect(
+		( select ) => {
+			if ( imageUrl || ! image ) return null;
+			const media = select( coreStore ).getMedia( image, { context: 'view' } );
+			return media?.source_url ?? null;
+		},
+		[ image, imageUrl ]
+	);
+
 	useEffect( () => {
 		if ( ! blockKey ) {
 			setAttributes( { blockKey: Math.random().toString( 36 ).substr( 2, 9 ) } );
 		}
 	}, [] );
+
+	// Backfill imageUrl attribute once the media data is available.
+	useEffect( () => {
+		if ( resolvedUrl ) {
+			setAttributes( { imageUrl: resolvedUrl } );
+		}
+	}, [ resolvedUrl ] );
+
+	const displayUrl = imageUrl || resolvedUrl || '';
 
 	return (
 		<div { ...blockProps }>
@@ -45,7 +65,6 @@ export default function InstructionEdit( { attributes, setAttributes, clientId }
 						placeholder={ __( 'Describe this step…', 'recipepress-reloaded' ) }
 						allowedFormats={ [ 'core/bold', 'core/italic', 'core/link' ] }
 						className="rpr-instruction-description"
-						data-description={ description }
 					/>
 				</div>
 
@@ -62,10 +81,10 @@ export default function InstructionEdit( { attributes, setAttributes, clientId }
 							value={ image }
 							render={ ( { open } ) => (
 								<>
-									{ imageUrl ? (
+									{ displayUrl ? (
 										<div className="rpr-instruction-image-wrap">
 											<img
-												src={ imageUrl }
+												src={ displayUrl }
 												alt={ __( 'Step image', 'recipepress-reloaded' ) }
 												className="rpr-instruction-image"
 											/>

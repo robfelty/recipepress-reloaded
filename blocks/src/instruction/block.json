@@ -19,10 +19,7 @@
   "attributes": {
     "description": {
       "type": "string",
-      "default": "",
-      "source": "attribute",
-      "selector": ".rpr-instruction-description",
-      "attribute": "data-description"
+      "default": ""
     },
     "image": {
       "type": "integer",

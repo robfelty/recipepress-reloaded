@@ -11,6 +11,7 @@ use Recipepress\Inc\Admin\Settings\Sanitization;
 use Recipepress\Inc\Admin\Settings\Settings;
 use Recipepress\Inc\Admin\Settings\Metaboxes;
 use Recipepress\Inc\Blocks\Blocks;
+use Recipepress\Inc\Blocks\Bulk_Converter;
 
 /**
  * The core plugin class.
@@ -324,6 +325,9 @@ class Init {
 	private function define_block_hooks() {
 		$blocks = new Blocks( $this->get_plugin_name(), $this->get_version() );
 		$blocks->register_hooks();
+
+		$bulk_converter = new Bulk_Converter( $this->get_plugin_name(), $this->get_version() );
+		$bulk_converter->register_hooks();
 	}
 
 	/**

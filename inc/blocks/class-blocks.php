@@ -47,7 +47,7 @@ class Blocks {
 		add_action( 'init',                        array( $this, 'register_meta' ) );
 		add_action( 'enqueue_block_editor_assets', array( $this, 'enqueue_editor_assets' ) );
 		add_action( 'wp_enqueue_scripts',          array( $this, 'enqueue_frontend_assets' ) );
-		add_action( 'wp_after_insert_post',        array( $this, 'sync_blocks_to_meta' ), 10, 3 );
+		add_action( 'wp_after_insert_post',        array( $this, 'sync_blocks_to_meta' ), 10, 4 );
 		add_action( 'add_meta_boxes',              array( $this, 'suppress_metaboxes_in_block_editor' ), 999 );
 		add_action( 'rest_api_init',               array( $this, 'register_rest_routes' ) );
 	}
@@ -231,6 +231,14 @@ class Blocks {
 			}
 		}
 
+		// Restore pre-block post_content so the classic editor is empty of blocks.
+		$archived_content = get_post_meta( $post_id, 'rpr_recipe_post_content_archived', true );
+		wp_update_post( array(
+			'ID'           => $post_id,
+			'post_content' => $archived_content !== false ? $archived_content : '',
+		) );
+		delete_post_meta( $post_id, 'rpr_recipe_post_content_archived' );
+
 		delete_post_meta( $post_id, self::USES_BLOCKS_KEY );
 
 		return array( 'success' => true );
@@ -240,7 +248,7 @@ class Blocks {
 	// Block → Meta sync (fired after REST save)
 	// ──────────────────────────────────────────────────────────────────────────
 
-	public function sync_blocks_to_meta( $post_id, $post, $update ) {
+	public function sync_blocks_to_meta( $post_id, $post, $update, $post_before ) {
 		if ( 'rpr_recipe' !== $post->post_type ) {
 			return;
 		}
@@ -264,9 +272,9 @@ class Blocks {
 			return;
 		}
 
-		// On the very first block-editor save: archive the original meta.
+		// On the very first block-editor save: archive the original meta and pre-block post_content.
 		if ( ! self::post_uses_recipe_blocks( $post_id ) ) {
-			$this->archive_meta( $post_id );
+			$this->archive_meta( $post_id, $post_before );
 		}
 
 		// Sync each container block's inner blocks → post meta.
@@ -286,7 +294,7 @@ class Blocks {
 	 * Archive the original meta keys and set the "uses blocks" flag.
 	 * Safe to call multiple times — checks the flag first.
 	 */
-	private function archive_meta( int $post_id ): void {
+	private function archive_meta( int $post_id, ?\WP_Post $post_before = null ): void {
 		foreach ( self::ARCHIVE_KEYS as $key ) {
 			if ( metadata_exists( 'post', $post_id, $key ) ) {
 				$value = get_post_meta( $post_id, $key, true );
@@ -294,6 +302,11 @@ class Blocks {
 				// Don't delete — sync_ingredients/instructions will overwrite it.
 			}
 		}
+
+		// Archive the pre-block post_content so revert restores the classic editor content.
+		// $post_before is the post state before this save — i.e. before blocks were added.
+		$original_content = $post_before ? $post_before->post_content : '';
+		update_post_meta( $post_id, 'rpr_recipe_post_content_archived', $original_content );
 
 		update_post_meta( $post_id, self::USES_BLOCKS_KEY, '1' );
 	}
@@ -489,6 +502,17 @@ class Blocks {
 
 	public function suppress_metaboxes_in_block_editor() {
 		if ( ! $this->is_block_editor_active() ) {
+			return;
+		}
+
+		// Determine the post being edited — get_the_ID() is unreliable during add_meta_boxes.
+		$post_id = isset( $_GET['post'] ) ? absint( $_GET['post'] ) : 0; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+		if ( ! $post_id ) {
+			global $post;
+			$post_id = $post ? $post->ID : 0;
+		}
+
+		if ( ! $post_id || ! self::post_uses_recipe_blocks( $post_id ) ) {
 			return;
 		}
 

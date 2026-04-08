@@ -1,6 +1,9 @@
 <?php
 
+
 namespace Recipepress\Inc\Common\Abstracts;
+
+defined( 'ABSPATH' ) || exit;
 
 /**
  * WP_AJAX
@@ -171,9 +174,10 @@ abstract class AJAX {
 	 */
 	public function return_back() {
 
-		if ( isset( $_SERVER['HTTP_REFERER'] ) ) {
-			header( 'Location: ' . $_SERVER['HTTP_REFERER'] ); // phpcs:ignore
-			die();
+		$referer = wp_get_referer();
+		if ( $referer ) {
+			wp_safe_redirect( $referer );
+			exit;
 		}
 
 		return false;

@@ -1,4 +1,6 @@
 <?php
+
+defined( 'ABSPATH' ) || exit;
 /**
  * Setting page/modal of the Recipepress author box extension
  *

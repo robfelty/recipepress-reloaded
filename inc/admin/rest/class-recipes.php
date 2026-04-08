@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Define class to handle the recipe REST controller
  *
@@ -10,6 +11,8 @@
  */
 
 namespace Recipepress\Inc\Admin\Rest;
+
+defined( 'ABSPATH' ) || exit;
 
 /**
  * The recipe REST controller
@@ -124,9 +127,15 @@ class Recipes extends \WP_REST_Controller {
 	 */
 	public function get_items( $request ) {
 
-		$args    = array( 'post_type' => 'rpr_recipe' );
+		$args = array( 'post_type' => 'rpr_recipe' );
+
+		// Unauthenticated users and those without edit_posts can only see published recipes.
+		if ( ! current_user_can( 'edit_posts' ) ) {
+			$args['post_status'] = 'publish';
+		}
+
 		$recipes = new \WP_Query();
-		$results = $recipes->query( $args ); // do a query, call another class, etc
+		$results = $recipes->query( $args );
 		$data    = array();
 
 		foreach ( $results as $item ) {
@@ -231,8 +240,13 @@ class Recipes extends \WP_REST_Controller {
 	 */
 	public function get_items_permissions_check( $request ) {
 
-		return true; // <--use to make readable by all
-		// return current_user_can( 'edit_posts' );
+		// Logged-in users need edit_posts to access non-published recipes.
+		// Unauthenticated users are allowed but get_items() restricts them to published only.
+		if ( is_user_logged_in() ) {
+			return current_user_can( 'edit_posts' );
+		}
+
+		return true;
 	}
 
 	/**

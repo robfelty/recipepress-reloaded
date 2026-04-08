@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This class replaces the builtin WP Taxonomy List widget.
  *
@@ -10,6 +11,8 @@
  */
 
 namespace Recipepress\Inc\Frontend\Widgets;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress\Inc\Core\Options;
 

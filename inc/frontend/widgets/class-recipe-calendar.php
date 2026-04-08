@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This class a widget displaying a calendar of recipe post dates.
  *
@@ -10,6 +11,8 @@
  */
 
 namespace Recipepress\Inc\Frontend\Widgets;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress\Inc\Core\Options;
 

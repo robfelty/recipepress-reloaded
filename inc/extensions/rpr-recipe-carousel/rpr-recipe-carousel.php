@@ -1,4 +1,6 @@
 <?php
+
+defined( 'ABSPATH' ) || exit;
 /**
  * Adds a carousel of related recipes
  *
@@ -141,6 +143,10 @@ class RPR_Recipe_Carousel extends Extension {
 		wp_enqueue_script( 'rpr-slick-js', NS\EXT_URL . 'rpr-recipe-carousel/assets/js/slick.min.js', array( 'jquery' ), '1.9.0', true );
 		wp_enqueue_script( 'rpr-recipe-carousel-js', NS\EXT_URL . 'rpr-recipe-carousel/assets/js/rpr-recipe-carousel.js', array( 'jquery' ), '1.9.0', true );
 
+		wp_localize_script( 'rpr-recipe-carousel-js', 'rprCarousel', array(
+			'nonce' => wp_create_nonce( 'rpr-carousel-nonce' ),
+		) );
+
 		$custom_css = '';
 		wp_add_inline_style( 'rpr-recipe-carousel-styles', esc_html( $custom_css ) );
 	}
@@ -240,6 +246,8 @@ class RPR_Recipe_Carousel extends Extension {
 	 * @return void
 	 */
 	public function get_recipes() {
+
+		check_ajax_referer( 'rpr-carousel-nonce', 'nonce' );
 
 		$data    = array();
 		$recipes = get_posts(

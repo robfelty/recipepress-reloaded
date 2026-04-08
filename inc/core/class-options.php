@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The class that handles getting our options
  *
@@ -10,6 +11,8 @@
  */
 
 namespace Recipepress\Inc\Core;
+
+defined( 'ABSPATH' ) || exit;
 
 /**
  * The get_option functionality of the plugin.

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The public-facing comment rating system of the plugin.
  *
@@ -8,6 +9,8 @@
  */
 
 namespace Recipepress\Inc\Frontend;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress as NS;
 use Recipepress\Inc\Core\Options;

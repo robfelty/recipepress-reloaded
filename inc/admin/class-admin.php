@@ -1,6 +1,9 @@
 <?php
 
+
 namespace Recipepress\Inc\Admin;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress as NS;
 use Recipepress\Inc\Admin\Settings\Definitions;

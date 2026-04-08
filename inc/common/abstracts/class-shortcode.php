@@ -1,6 +1,9 @@
 <?php
 
+
 namespace Recipepress\Inc\Common\Abstracts;
+
+defined( 'ABSPATH' ) || exit;
 
 /**
  * The abstract metadata class.

@@ -1,4 +1,6 @@
 <?php
+
+defined( 'ABSPATH' ) || exit;
 /*
 Author: wzyMedia
 Author Mail: kemory@wzymedia.com

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This class displays a list of recent recipe.
  *
@@ -10,6 +11,8 @@
  */
 
 namespace Recipepress\Inc\Frontend\Widgets;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress\Inc\Core\Options;
 use Recipepress\Inc\Frontend\Rating;

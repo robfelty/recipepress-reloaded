@@ -1,4 +1,6 @@
 <?php
+
+defined( 'ABSPATH' ) || exit;
 /**
  * @var \WP_Query $recipes An array of recipes
  * @var \Recipepress\Inc\Frontend\Shortcodes\Filterable $this This class

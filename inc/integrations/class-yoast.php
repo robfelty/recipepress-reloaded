@@ -1,6 +1,9 @@
 <?php
 
+
 namespace Recipepress\Inc\Integrations;
+
+defined( 'ABSPATH' ) || exit;
 /**
  * Handle the recipe metadata integration with Yoast SEO Schema (version 11+)
  *

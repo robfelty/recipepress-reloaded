@@ -1,5 +1,7 @@
 <?php
 
+defined( 'ABSPATH' ) || exit;
+
 use Recipepress\Inc\Common\Abstracts\Extension;
 
 /**
@@ -117,22 +119,15 @@ class RPR_Duplicate_Recipe extends Extension {
 				wp_set_object_terms( $new_post_id, $post_terms, $taxonomy );
 			}
 
-			// Duplicate all post meta just in two SQL queries
-			$post_meta_infos = $wpdb->get_results( "SELECT meta_key, meta_value FROM $wpdb->postmeta WHERE post_id=$post_id" );
-			if ( 0 !== count( $post_meta_infos ) ) {
-				$sql_query = "INSERT INTO $wpdb->postmeta (post_id, meta_key, meta_value) ";
-
+			// Duplicate all post meta.
+			$post_meta_infos = $wpdb->get_results( $wpdb->prepare( "SELECT meta_key, meta_value FROM $wpdb->postmeta WHERE post_id = %d", $post_id ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery
+			if ( ! empty( $post_meta_infos ) ) {
 				foreach ( $post_meta_infos as $meta_info ) {
-					$meta_key = $meta_info->meta_key;
-					if ( '_wp_old_slug' === $meta_key ) {
+					if ( '_wp_old_slug' === $meta_info->meta_key ) {
 						continue;
 					}
-					$meta_value      = addslashes( $meta_info->meta_value );
-					$sql_query_sel[] = "SELECT $new_post_id, '$meta_key', '$meta_value'";
+					add_post_meta( $new_post_id, $meta_info->meta_key, maybe_unserialize( $meta_info->meta_value ) );
 				}
-
-				$sql_query .= implode( " UNION ALL ", $sql_query_sel );
-				$wpdb->query( $sql_query );
 			}
 
 

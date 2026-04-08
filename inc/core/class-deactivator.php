@@ -1,6 +1,9 @@
 <?php
 
+
 namespace Recipepress\Inc\Core;
+
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Fired during plugin deactivation

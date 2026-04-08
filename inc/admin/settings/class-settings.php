@@ -1,6 +1,9 @@
 <?php
 
+
 namespace Recipepress\Inc\Admin\Settings;
+
+defined( 'ABSPATH' ) || exit;
 
 /**
  * The dashboard-specific functionality of the plugin.

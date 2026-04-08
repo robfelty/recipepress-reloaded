@@ -1,6 +1,9 @@
 <?php
 
+
 namespace Recipepress\Inc\Frontend\Shortcodes;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress as NS;
 use Recipepress\Inc\Common\Abstracts\Shortcode;

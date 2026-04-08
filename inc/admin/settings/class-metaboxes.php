@@ -1,6 +1,9 @@
 <?php
 
+
 namespace Recipepress\Inc\Admin\Settings;
+
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Handles the generation of metaboxes used on the settings page

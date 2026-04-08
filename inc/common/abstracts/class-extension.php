@@ -1,6 +1,9 @@
 <?php
 
+
 namespace Recipepress\Inc\Common\Abstracts;
+
+defined( 'ABSPATH' ) || exit;
 
 use const Recipepress\PLUGIN_VERSION;
 

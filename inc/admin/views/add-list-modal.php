@@ -1,4 +1,6 @@
 <?php
+
+defined( 'ABSPATH' ) || exit;
 /**
  * The shortcode overlay view (aka the dialog itself) to insert recipe-list shortcodes.
  *

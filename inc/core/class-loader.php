@@ -1,6 +1,9 @@
 <?php
 
+
 namespace Recipepress\Inc\Core;
+
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Register all actions, filters and shortcodes for the plugin

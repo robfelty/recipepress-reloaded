@@ -1,6 +1,9 @@
 <?php
 
+
 namespace Recipepress\Inc\Importers;
+
+defined( 'ABSPATH' ) || exit;
 /**
  * Handles importing recipes from the WP Ultimate Recipe plugin
  *
@@ -83,7 +86,7 @@ class WPUR extends WP_Background_Process {
 		set_post_type( $ID, 'rpr_recipe' );
 
 		// strip shortcodes
-		$post_content = $wpdb->get_var( "SELECT post_content FROM  $wpdb->posts  WHERE ID = $ID");
+		$post_content = $wpdb->get_var( $wpdb->prepare( "SELECT post_content FROM $wpdb->posts WHERE ID = %d", $ID ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery
 		if ( $post_content ) {
 			$post_content = str_ireplace( '[recipe]', '', $post_content );
 			$post_content = str_ireplace( '[recipe-video]', '', $post_content );
@@ -92,9 +95,8 @@ class WPUR extends WP_Background_Process {
 			$wpdb->update( $wpdb->posts, [ 'post_content' => $post_content ], [ 'ID' => $ID ] );
 		}
 
-		// phpcs:ignore
-		$stored_data = $wpdb->get_results(
-			"SELECT * from $wpdb->postmeta WHERE post_id = $ID AND meta_key LIKE 'recipe_%'",
+		$stored_data = $wpdb->get_results( // phpcs:ignore WordPress.DB.DirectDatabaseQuery
+			$wpdb->prepare( "SELECT * FROM $wpdb->postmeta WHERE post_id = %d AND meta_key LIKE 'recipe_%'", $ID ),
 			OBJECT_K
 		);
 
@@ -141,7 +143,7 @@ class WPUR extends WP_Background_Process {
 
 			// recipe_prep_time
 			if ( 'recipe_prep_time' === $datum->meta_key && '' !== $datum->meta_value ) {
-				$unit = $wpdb->get_var( "SELECT meta_value FROM  $wpdb->postmeta  WHERE post_id = $datum->post_id  AND meta_key = 'recipe_prep_time_text'");
+				$unit = $wpdb->get_var( $wpdb->prepare( "SELECT meta_value FROM $wpdb->postmeta WHERE post_id = %d AND meta_key = 'recipe_prep_time_text'", $datum->post_id ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery
 				$wpdb->update( $wpdb->postmeta, [
 					'meta_key'   => 'rpr_recipe_prep_time',
 					'meta_value' => $this->convert_time( (int) $datum->meta_value, $unit )
@@ -156,7 +158,7 @@ class WPUR extends WP_Background_Process {
 
 			// recipe_cook_time
 			if ( 'recipe_cook_time' === $datum->meta_key && '' !== $datum->meta_value ) {
-				$unit = $wpdb->get_var( "SELECT meta_value FROM  $wpdb->postmeta  WHERE post_id = $datum->post_id  AND meta_key = 'recipe_cook_time_text'");
+				$unit = $wpdb->get_var( $wpdb->prepare( "SELECT meta_value FROM $wpdb->postmeta WHERE post_id = %d AND meta_key = 'recipe_cook_time_text'", $datum->post_id ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery
 				$wpdb->update( $wpdb->postmeta, [
 					'meta_key'   => 'rpr_recipe_cook_time',
 					'meta_value' => $this->convert_time( (int) $datum->meta_value, $unit )
@@ -171,7 +173,7 @@ class WPUR extends WP_Background_Process {
 
 			// recipe_passive_time
 			if ( 'recipe_passive_time' === $datum->meta_key && '' !== $datum->meta_value ) {
-				$unit = $wpdb->get_var( "SELECT meta_value FROM  $wpdb->postmeta  WHERE post_id = $datum->post_id  AND meta_key = 'recipe_passive_time_text'");
+				$unit = $wpdb->get_var( $wpdb->prepare( "SELECT meta_value FROM $wpdb->postmeta WHERE post_id = %d AND meta_key = 'recipe_passive_time_text'", $datum->post_id ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery
 				$wpdb->update( $wpdb->postmeta, [
 					'meta_key'   => 'rpr_recipe_passive_time',
 					'meta_value' => $this->convert_time( (int) $datum->meta_value, $unit )
@@ -186,7 +188,7 @@ class WPUR extends WP_Background_Process {
 
 			// recipe_ingredients
 			if ( 'recipe_ingredients' === $datum->meta_key && '' !== $datum->meta_value ) {
-				$saved_ingredients = maybe_unserialize( $wpdb->get_var( "SELECT meta_value FROM  $wpdb->postmeta  WHERE post_id = $datum->post_id  AND meta_key = 'recipe_ingredients'") );
+				$saved_ingredients = maybe_unserialize( $wpdb->get_var( $wpdb->prepare( "SELECT meta_value FROM $wpdb->postmeta WHERE post_id = %d AND meta_key = 'recipe_ingredients'", $datum->post_id ) ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery
 				$converted_ingredients = [];
 
 				foreach ( $saved_ingredients as $key => $ingredient ) {
@@ -229,7 +231,7 @@ class WPUR extends WP_Background_Process {
 
 			// recipe_instructions
 			if ( 'recipe_instructions' === $datum->meta_key && '' !== $datum->meta_value ) {
-				$saved_instructions = maybe_unserialize( $wpdb->get_var( "SELECT meta_value FROM  $wpdb->postmeta  WHERE post_id = $datum->post_id  AND meta_key = 'recipe_instructions'") );
+				$saved_instructions = maybe_unserialize( $wpdb->get_var( $wpdb->prepare( "SELECT meta_value FROM $wpdb->postmeta WHERE post_id = %d AND meta_key = 'recipe_instructions'", $datum->post_id ) ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery
 				$converted_instructions = [];
 
 				foreach ( $saved_instructions as $key => $instruction ) {
@@ -278,7 +280,7 @@ class WPUR extends WP_Background_Process {
 			// recipe_terms
 			if ( 'recipe_terms' === $datum->meta_key && '' !== $datum->meta_value ) {
 				$taxonomies = [];
-				$saved_terms = maybe_unserialize( $wpdb->get_var( "SELECT meta_value FROM  $wpdb->postmeta  WHERE post_id = $datum->post_id  AND meta_key = 'recipe_terms'") );
+				$saved_terms = maybe_unserialize( $wpdb->get_var( $wpdb->prepare( "SELECT meta_value FROM $wpdb->postmeta WHERE post_id = %d AND meta_key = 'recipe_terms'", $datum->post_id ) ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery
 
 				foreach ( $saved_terms as $key => $saved_term ) {
 					if ( ! in_array( $key, [ 'ingredient', 'category', 'post_tag', 'wpurp_keyword' ], true ) ) {
@@ -313,7 +315,7 @@ class WPUR extends WP_Background_Process {
 
 			// recipe_nutritional
 			if ( 'recipe_nutritional' === $datum->meta_key && '' !== $datum->meta_value ) {
-				$saved_nutrition = maybe_unserialize( $wpdb->get_var( "SELECT meta_value FROM  $wpdb->postmeta  WHERE post_id = $datum->post_id  AND meta_key = 'recipe_nutritional'") );
+				$saved_nutrition = maybe_unserialize( $wpdb->get_var( $wpdb->prepare( "SELECT meta_value FROM $wpdb->postmeta WHERE post_id = %d AND meta_key = 'recipe_nutritional'", $datum->post_id ) ) ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery
 
 				foreach ( $saved_nutrition as $k => $v ) {
 					if ( 'calories' === $k ) {

@@ -1,6 +1,9 @@
 <?php
 
+
 namespace Recipepress\Inc\Common\Traits;
+
+defined( 'ABSPATH' ) || exit;
 
 use Mockery\Exception;
 use Recipepress\Inc\Core\Activator;
@@ -247,8 +250,7 @@ trait Utilities {
 	 */
 	public function reset_all_options() {
 
-		// phpcs:ignore
-		if ( ! wp_verify_nonce( $_POST['reset_nonce'], 'rpr-options-reset' )
+		if ( empty( $_POST['reset_nonce'] ) || ! wp_verify_nonce( $_POST['reset_nonce'], 'rpr-options-reset' ) // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
 		|| ! current_user_can( 'manage_options' ) ) {
 			wp_send_json_error();
 		}

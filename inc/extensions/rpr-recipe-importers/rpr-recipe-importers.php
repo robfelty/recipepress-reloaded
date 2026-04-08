@@ -1,5 +1,7 @@
 <?php
 
+defined( 'ABSPATH' ) || exit;
+
 use Recipepress\Inc\Common\Abstracts\Extension;
 use Recipepress\Inc\Core\Importers;
 use Recipepress\Inc\Importers\WPUR;

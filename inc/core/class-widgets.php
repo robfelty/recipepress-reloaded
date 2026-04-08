@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Define the plugin's widget's functionalities
  *
@@ -8,6 +9,8 @@
  */
 
 namespace Recipepress\Inc\Core;
+
+defined( 'ABSPATH' ) || exit;
 
 
 use Recipepress\Inc\Frontend\Widgets\Recipe_Calendar as Calendar;

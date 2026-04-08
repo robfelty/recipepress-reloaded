@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Define the plugin's shortcodes functionalities
  *
@@ -8,6 +9,8 @@
  */
 
 namespace Recipepress\Inc\Core;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress as NS;
 use Recipepress\Inc\Frontend;

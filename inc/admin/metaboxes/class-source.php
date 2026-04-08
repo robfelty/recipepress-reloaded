@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Handles saving the recipe source meta information.
  *
@@ -7,6 +8,8 @@
  */
 
 namespace Recipepress\Inc\Admin\Metaboxes;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress as NS;
 use Recipepress\Inc\Core\Options;

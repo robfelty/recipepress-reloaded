@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Define background processing chores
  *
@@ -10,6 +11,8 @@
  */
 
 namespace Recipepress\Inc\Core;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress\Inc\Common\Tasks\Tags_To_Keywords;
 use Recipepress\Inc\Common\Tasks\Update_Taxonomy_Slug;

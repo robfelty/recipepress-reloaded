@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Displays the Taxonomy Filter Widget
  *
@@ -10,6 +11,8 @@
  */
 
 namespace Recipepress\Inc\Frontend\Widgets;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress\Inc\Core\Options;
 

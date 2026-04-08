@@ -1,6 +1,9 @@
 <?php
 
+
 namespace Recipepress\Inc\Admin\Settings;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress as NS;
 use Recipepress\Inc\Libraries\CSSTidy\CSSTidy;

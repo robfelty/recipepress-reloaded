@@ -1,6 +1,9 @@
 <?php
 
+
 namespace Recipepress\Inc\Admin\Metaboxes;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress\Inc\Core\Options;
 use Recipepress\Inc\Common\Abstracts\Metadata;

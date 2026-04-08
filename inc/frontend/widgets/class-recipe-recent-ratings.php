@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This class handles the Recent Recipe Rating widget.
  *
@@ -10,6 +11,8 @@
  */
 
 namespace Recipepress\Inc\Frontend\Widgets;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress as NS;
 use Recipepress\Inc\Core\Options;

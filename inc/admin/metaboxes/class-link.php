@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Handles saving the recipe source meta information.
  *
@@ -7,6 +8,8 @@
  */
 
 namespace Recipepress\Inc\Admin\Metaboxes;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress as NS;
 use Recipepress\Inc\Core\Options;
@@ -65,8 +68,12 @@ class Link {
      */
     public function latest_recipes_posts() {
 
-        if ( isset( $_POST['nonce'] ) && ! wp_verify_nonce( $_POST['nonce'], 'rpr-link-modal-nonce' ) ) {
-            return;
+        if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( $_POST['nonce'], 'rpr-link-modal-nonce' ) ) {
+            wp_send_json_error( null, 403 );
+        }
+
+        if ( ! current_user_can( 'edit_posts' ) ) {
+            wp_send_json_error( null, 403 );
         }
 
         $output = '';
@@ -76,7 +83,7 @@ class Link {
             'orderby' => 'date',
             'post_status' => 'publish'
         ];
-        $pagenum = isset( $_POST['page'] ) ? (int) $_POST['page'] : 1;
+        $pagenum = isset( $_POST['page'] ) ? absint( $_POST['page'] ) : 1;
         $args['offset'] = $pagenum > 1 ? $args['posts_per_page'] * ( $pagenum - 1 ) : 0;
 
         $posts = new \WP_Query( $args );
@@ -85,15 +92,15 @@ class Link {
 
         foreach( $posts->posts as $post ) {
             $output .= '<li data-action="click->rpr-link#selectListItem" ';
-            $output .= 'data-permalink="' . get_the_permalink( $post->ID ) . '" ';
-            $output .= 'data-title="' . $post->post_title . '" ';
+            $output .= 'data-permalink="' . esc_url( get_the_permalink( $post->ID ) ) . '" ';
+            $output .= 'data-title="' . esc_attr( $post->post_title ) . '" ';
             $output .= '>';
-            $output .= '<span>' . $post->post_title . '</span>';
-            $output .= ' <span style="color:#a3a3a3;">' . str_replace( 'rpr_', '', $post->post_type ) . '</span>';
+            $output .= '<span>' . esc_html( $post->post_title ) . '</span>';
+            $output .= ' <span style="color:#a3a3a3;">' . esc_html( str_replace( 'rpr_', '', $post->post_type ) ) . '</span>';
             $output .= '</li>';
         }
 
-        echo $output;
+        echo $output; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped above per-field
 
         wp_die();
     }
@@ -107,29 +114,34 @@ class Link {
      */
     public function search_recipes_posts() {
 
-        if ( isset( $_POST['nonce'] ) && ! wp_verify_nonce( $_POST['nonce'], 'rpr-link-modal-nonce' ) ) {
-            return;
+        if ( ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( $_POST['nonce'], 'rpr-link-modal-nonce' ) ) {
+            wp_send_json_error( null, 403 );
+        }
+
+        if ( ! current_user_can( 'edit_posts' ) ) {
+            wp_send_json_error( null, 403 );
         }
 
         $output = '';
         $search = isset( $_POST['search'] ) ? sanitize_text_field( $_POST['search'] ) : '';
-        $posts  = new \WP_Query([
-            's' => $search
-        ]);
+        $posts  = new \WP_Query( [
+            's'           => $search,
+            'post_status' => 'publish',
+        ] );
 
         wp_reset_postdata();
 
         foreach( $posts->posts as $post ) {
             $output .= '<li data-action="click->link-modal#selectListItem" ';
-            $output .= 'data-permalink="' . get_the_permalink( $post->ID ) . '" ';
-            $output .= 'data-title="' . $post->post_title . '" ';
+            $output .= 'data-permalink="' . esc_url( get_the_permalink( $post->ID ) ) . '" ';
+            $output .= 'data-title="' . esc_attr( $post->post_title ) . '" ';
             $output .= '>';
-            $output .= '<span>' . $post->post_title . '</span>';
-            $output .= ' <span style="color:#a3a3a3;">' . str_replace( 'rpr_', '', $post->post_type ) . '</span>';
+            $output .= '<span>' . esc_html( $post->post_title ) . '</span>';
+            $output .= ' <span style="color:#a3a3a3;">' . esc_html( str_replace( 'rpr_', '', $post->post_type ) ) . '</span>';
             $output .= '</li>';
         }
 
-        echo $output;
+        echo $output; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped above per-field
 
         wp_die();
     }

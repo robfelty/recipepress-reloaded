@@ -1,6 +1,9 @@
 <?php
 
+
 namespace Recipepress\Inc\Common\Traits;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress\Inc\Core\Options;
 

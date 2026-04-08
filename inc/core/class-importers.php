@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Define background processing chores
  *
@@ -10,6 +11,8 @@
  */
 
 namespace Recipepress\Inc\Core;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress as NS;
 use Recipepress\Inc\Importers\WPUR;

@@ -1,5 +1,7 @@
 <?php
 
+defined( 'ABSPATH' ) || exit;
+
 use Recipepress as NS;
 use Recipepress\Inc\Common\Abstracts\Extension;
 use Recipepress\Inc\Common\Entities\Share_Count;

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Define background tasks to be scheduled with WP Cron
  *
@@ -10,6 +11,8 @@
  */
 
 namespace Recipepress\Inc\Core;
+
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Handles the scheduled events to be handled by WP Cron

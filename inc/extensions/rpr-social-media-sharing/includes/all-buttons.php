@@ -1,4 +1,6 @@
 <?php
+
+defined( 'ABSPATH' ) || exit;
 /**
  * @var RPR_Social_Media_Sharing $_this
  */

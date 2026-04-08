@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Registers the Author Profile widget
  *
@@ -10,6 +11,8 @@
  */
 
 namespace Recipepress\Inc\Frontend\Widgets;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress\Inc\Core\Options;
 use Recipepress\Inc\Common\Utilities\Icons;

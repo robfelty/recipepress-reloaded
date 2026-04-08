@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Run through the task of updates our recipe ingredients
  *
@@ -6,6 +7,8 @@
  */
 
 namespace Recipepress\Inc\Common\Tasks;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress as NS;
 use Recipepress\Inc\Libraries\WP_Background_Processing\WP_Background_Process;

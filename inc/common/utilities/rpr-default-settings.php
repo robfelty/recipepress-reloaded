@@ -1,5 +1,7 @@
 <?php
 
+defined( 'ABSPATH' ) || exit;
+
 $options = array(
 	'rpr_taxonomy_selection'            => 'Course,Cuisine,Season,Difficulty',
 	'rpr_comment_rating_label'          => 'Cooked this? Rate this recipe!',

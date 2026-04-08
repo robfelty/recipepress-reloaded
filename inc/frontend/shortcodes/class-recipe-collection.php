@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Extends the Shortcode abstract class to create new shortcodes
  *
@@ -6,6 +7,8 @@
  */
 
 namespace Recipepress\Inc\Frontend\Shortcodes;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress as NS;
 use Recipepress\Inc\Common\Abstracts\Shortcode;

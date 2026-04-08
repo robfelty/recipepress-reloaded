@@ -1,5 +1,7 @@
 <?php
 
+defined( 'ABSPATH' ) || exit;
+
 use Recipepress\Inc\Common\Abstracts\Extension;
 
 /**

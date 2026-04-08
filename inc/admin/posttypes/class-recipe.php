@@ -1,6 +1,9 @@
 <?php
 
+
 namespace Recipepress\Inc\Admin\PostTypes;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress as NS;
 use Recipepress\Inc\Common\Abstracts\PostType;

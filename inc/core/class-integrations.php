@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Handles integrations with other plugins
  *
@@ -10,6 +11,8 @@
  */
 
 namespace Recipepress\Inc\Core;
+
+defined( 'ABSPATH' ) || exit;
 
 use Recipepress\Inc\Frontend\Template;
 use Recipepress\Inc\Integrations\Yoast;
